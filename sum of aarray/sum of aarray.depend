@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1597056585 source:e:\c programs\sum of aarray\main.c
+	<stdio.h>
+	<stdlib.h>
+

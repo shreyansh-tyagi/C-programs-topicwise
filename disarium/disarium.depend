@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1602322708 source:d:\c programs\disarium\main.c
+	<stdio.h>
+	<string.h>
+	<math.h>
+	<stdlib.h>
+

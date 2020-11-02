@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1597043572 source:e:\c programs\while.c
+	<stdio.h>
+	<stdlib.h>
+
+1597043081 source:e:\c programs\pattern2\main.c
+	<stdio.h>
+	<conio.h>
+

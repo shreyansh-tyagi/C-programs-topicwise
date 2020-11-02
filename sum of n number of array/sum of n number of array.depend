@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1597142692 source:e:\c programs\sum of n number of array\main.c
+	<stdio.h>
+	<conio.h>
+

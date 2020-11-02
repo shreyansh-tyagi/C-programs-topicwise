@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1602659875 source:d:\c programs\sum of nth element of student\main.c
+	<stdio.h>
+	<string.h>
+	<math.h>
+	<stdlib.h>
+

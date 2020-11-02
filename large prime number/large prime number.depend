@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1599308851 source:d:\c progams\large prime number\main.c
+	<stdio.h>
+	<conio.h>
+

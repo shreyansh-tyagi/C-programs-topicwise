@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1599897562 source:d:\c progams\function(without return type and without argument)\main.c
+	<stdio.h>
+	<conio.h>
+
