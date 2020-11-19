@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1605784914 source:d:\c programs\hacker rank even odd game\main.c
+	<stdio.h>
+	<conio.h>
+
