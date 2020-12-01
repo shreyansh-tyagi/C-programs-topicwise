@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1606821690 source:d:\c programs\smallest  element in matrix\main.c
+	<stdio.h>
+	<string.h>
+	<math.h>
+	<stdlib.h>
+
