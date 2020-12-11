@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1607691561 source:d:\c programs\kth element in matrix\main.c
+	<stdio.h>
+	<conio.h>
+
