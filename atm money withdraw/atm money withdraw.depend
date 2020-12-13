@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1607857276 source:d:\c programs\atm money withdraw\main.c
+	<stdio.h>
+	<conio.h>
+
