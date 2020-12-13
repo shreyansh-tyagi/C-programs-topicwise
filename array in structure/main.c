@@ -5,7 +5,7 @@ struct emp
     char name[30];
     float salary;
 };
-void main()
+int main()
 {
     struct emp a[50];
     int i,n;
