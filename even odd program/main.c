@@ -11,7 +11,7 @@ int main()
     }
     for(int i=0;i<=n;i++)
     {
-        printf(" %d",a[i]);
+        printf("\n %d",a[i]);
     }
     for( int i=0;i<=n;i++)
     {
@@ -19,7 +19,7 @@ int main()
       // b=a[i]%2;
       if(a[i]%2==0)
       {
-          printf("%d",a[i]);
+          printf(" %d",a[i]);
 
       }
       // printf("%d",b);
