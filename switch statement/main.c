@@ -3,21 +3,45 @@
 
 int main()
 {
-    int a;
-    printf("enter the value of a\n");
-    scanf("%d",&a);
+    char a;
+    printf("enter any alphabet: \n");
+    scanf("%c",&a);
     switch(a)
     {
-    case 1:
+    case 'a' && 'A':
         {
-            printf("we are in case one \n");
+            printf("VOWEL \n");
             break;
         }
-    case 2:
+    case 'e':
+        {
+            printf("VOWEL\n");
+            break;
+        }
+        
+    case 'i':
+        {
+            printf("VOWEL \n");
+            break;
+        }
+        
+    case 'o':
+        {
+            printf("VOWEL\n");
+            break;
+        }
+        
+    case 'u':
+        {
+            printf("VOWEL\n");
+            break;
+        }
+        
+   /* case 'u':
         {
             printf("we are in case 2\n");
             break;
-        }
+        } */
     default:
         {
             printf("we are in default");
