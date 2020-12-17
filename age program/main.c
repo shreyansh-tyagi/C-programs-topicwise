@@ -13,8 +13,8 @@ void main()
     }
     printf("\nenter another age :");
     scanf("%d",&a);
-    (a>18)?printf("you are eligible"):printf("you are not eligible");
-    (a>18)?b:c;
-    printf("\nthe value of b and c: %d %d",b,c);
+    (a>18)?printf("you are eligible\n"):printf("you are not eligible\n");
+    (a>18)?printf("the value of b : %d",b):printf("the value of c %d",c);
+   // printf("\nthe value of b and c: %d %d",b,c);
 
 }
