@@ -8,7 +8,7 @@ int main()
     scanf("%c",&a);
     switch(a)
     {
-    case 'a' && 'A':
+    case 'a':
         {
             printf("VOWEL \n");
             break;
@@ -37,14 +37,18 @@ int main()
             break;
         }
         
-   /* case 'u':
-        {
-            printf("we are in case 2\n");
-            break;
-        } */
+    case 'A':printf("VOWEL\n");break;
+    
+    case 'E':printf("VOWEL\n");break;
+    
+    case 'I':printf("VOWEL\n");break;
+    
+    case 'O':printf("VOWEL\n");break;
+    
+    case 'U':printf("VOWEL\n");break;
     default:
         {
-            printf("we are in default");
+            printf("CONSONENT");
         }
     }
 }
