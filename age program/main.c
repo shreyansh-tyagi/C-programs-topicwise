@@ -1,7 +1,7 @@
 #include<stdio.h>
 void main()
 {
-    int n,a;
+    int n,a,b=10,c=20;
     printf("enter the age:");
     scanf("%d",&n);
     if(n>18)
@@ -14,7 +14,7 @@ void main()
     printf("\nenter another age :");
     scanf("%d",&a);
     (a>18)?printf("you are eligible"):printf("you are not eligible");
-    (a>18)?a+10:a-10;
-    printf("\nthe value of a: %d",a);
+    (a>18)?b:c;
+    printf("\nthe value of b and c: %d %d",b,c);
 
 }
