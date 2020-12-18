@@ -1,0 +1,44 @@
+#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+    int a,r,c,j,d,i,e;
+    printf("enter the days:");
+    scanf("%d",&d);
+    for(i=1;i<d;i++)
+    {
+        e=1;
+        a=(d*100);
+        for(j=i+1;j<=d;j++)
+        {
+            a=a+(e*10);
+            ++e;
+        }
+        printf("%d\n",a);
+        break;
+    }
+    for(i=1;i<d;i++)
+    {
+        e=1;
+        r=(d*120);
+        for(j=i+1;j<=d;j++)
+        {
+            r=r+(e*5);
+            ++e;
+        }
+        printf("%d\n",r);
+        break;
+    }
+    for(i=1;i<d;i++)
+    {
+        e=1;
+        c=(d*80);
+        for(j=i+1;j<=d;j++)
+        {
+            c=c+(e*20);
+            ++e;
+        }
+        printf("%d",c);
+        break;
+    }
+}
