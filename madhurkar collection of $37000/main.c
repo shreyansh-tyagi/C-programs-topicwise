@@ -13,4 +13,9 @@ void main()
     {
         printf(" %d\n",a[i]);
     }
+    for(i=1;i<=4;i++)
+    {
+        printf(" %d",a[i]);
+    }
+    printf("\n%d",a[n]);
 }
