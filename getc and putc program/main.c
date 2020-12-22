@@ -6,6 +6,7 @@ void main()
   gets(a);
   printf("your name is :");
   puts(a); 
+  printf("enter upto where you want the chracter to print: ");
   fgets(a,4,stdin);
   printf("character is : %s",a);
   char t='s',u='n',c;
