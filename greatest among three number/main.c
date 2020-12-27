@@ -18,7 +18,7 @@ void main(){
         {
             printf("C is greater\n");
         }
-        
+
     }
 else if(b>c){
     printf("B is greater\n");
