@@ -8,7 +8,7 @@
      scanf ("%f", &n1);
      printf ("Enter number 2 for performing task = ");
      scanf ("%f", &n2);
-     printf("eselect from given choice: ");
+     //printf("eselect from given choice: ");
 
      printf ("ADDITION = 1\nSUBTRACT = 2\nMULTIPLICATION = 3\nDIVISION = 4");
      printf ("\nEnter your choice =");
