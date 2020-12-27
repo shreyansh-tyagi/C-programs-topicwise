@@ -3,7 +3,7 @@ int main ()
 {
     int unit, amount;
     printf ("Enter Electricity unit => ");
-    scanf ("%d", &num);
+    scanf ("%d", &unit);
     if(unit<=100)
     amount = unit*3;
     else
