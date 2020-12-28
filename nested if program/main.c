@@ -15,7 +15,7 @@ int main() {
         if (i > 12) 
             printf("i is smaller than 12 too\n"); 
         else
-            printf("i is greater than 15"); 
+            printf("i is greater than 15\n"); 
     } 
     else
     {
