@@ -21,6 +21,7 @@ int main() {
     {
         printf("we are in else");
     }
+    printf("we are out of if and nested if statement ")
     
   
     return 0; 
