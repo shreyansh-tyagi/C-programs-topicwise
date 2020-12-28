@@ -3,7 +3,7 @@
 int main() { 
     int i = 10; 
   
-    if (i == 10) 
+    if (i == 100) 
     { 
         // First if statement 
         if (i < 15) 
@@ -21,7 +21,7 @@ int main() {
     {
         printf("we are in else");
     }
-    printf("we are out of if and nested if statement ")
+    printf("we are out of if and nested if statement ");
     
   
     return 0; 
