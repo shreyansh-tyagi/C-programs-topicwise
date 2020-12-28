@@ -3,7 +3,7 @@
 int main() { 
     int i = 10; 
   
-    if (i == 100) 
+    if (i == 10) 
     { 
         // First if statement 
         if (i < 15) 
@@ -12,14 +12,14 @@ int main() {
         // Nested - if statement 
         // Will only be executed if statement above 
         // is true 
-        if (i < 12) 
+        if (i > 12) 
             printf("i is smaller than 12 too\n"); 
         else
             printf("i is greater than 15"); 
     } 
     else
     {
-        printf("we are in else");
+        printf("we are in else\n");
     }
     printf("we are out of if and nested if statement ");
     
