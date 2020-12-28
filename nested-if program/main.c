@@ -8,16 +8,18 @@ void main()
     {
         if(b<c)
         {
-            printf("we are nested if");
+            printf("we are nested if\n");
         }
         else
         {
-            printf("we are in inner else");
+            printf("we are in inner else\n");
         }
+        printf("we are in if\n");
         
     }
     else
     {
-        printf("we are in outer else");
+        printf("we are in outer else\n");
     }
+    printf("we are out of if and nested if ");
 }
