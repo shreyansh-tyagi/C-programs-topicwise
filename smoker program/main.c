@@ -30,6 +30,7 @@ void main()
             break;
             
         }
+       // break;
          case 'n':
         {
           //  printf("your name: %s\n",name);
