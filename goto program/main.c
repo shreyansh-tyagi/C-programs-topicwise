@@ -2,16 +2,29 @@
 void using_goto_downword()
 {
     int n=1;
-    label:
+    printf("using goto downword:");
+    abc:
     printf(" %d",n);
     ++n;
     // printf(" %d",n);
     if(n<=10)
-    goto label;
+    goto abc;
+}
+void using_goto_upword()
+{
+    int n=1;
+    printf("using goto upword: ");
+    goto xyz;
+    printf(" %d",n);
+    n++;
+    if(n<=10)
+    xyz: printf(" %d",n);
+
 }
 
 int main()
 {
     using_goto_downword();
+    using_goto_upword();
     return (0);
 }
