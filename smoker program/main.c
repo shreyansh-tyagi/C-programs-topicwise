@@ -36,14 +36,14 @@ void main()
             if(salary<10000)
             {
             salary=salary+((salary*10)/100);
-            printf("your salary after increment as you are a smoker: %d\n",salary);
+            printf("your salary after increment as you are not a smoker: %d\n",salary);
             }
             else
             {
               if(salary>10000)
               {
                   salary=salary+((salary*15)/100);
-                  printf("your salary after increment as you are a smoker: %d\n",salary);
+                  printf("your salary after increment as you are  not a smoker: %d\n",salary);
               }  /* code */
             }
             break;
