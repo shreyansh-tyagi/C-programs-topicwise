@@ -14,11 +14,11 @@ void using_goto_upword()
 {
     int n=1;
     printf("\nusing goto upword:\n ");
-    goto xyz;
+    goto abc;
     printf(" %d",n);
     n++;
     if(n<=10)
-    xyz: printf(" %d",n);
+    abc: printf(" %d",n);
 
 }
 
