@@ -2,7 +2,7 @@
 void using_goto_downword()
 {
     int n=1;
-    printf("using goto downword:");
+    printf("using goto downword:\n");
     abc:
     printf(" %d",n);
     ++n;
@@ -13,7 +13,7 @@ void using_goto_downword()
 void using_goto_upword()
 {
     int n=1;
-    printf("using goto upword: ");
+    printf("\nusing goto upword:\n ");
     goto xyz;
     printf(" %d",n);
     n++;
