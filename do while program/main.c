@@ -7,5 +7,5 @@ void main()
         printf("hello \n");
         i++;
     } while (i>2);
-    
+
 }
