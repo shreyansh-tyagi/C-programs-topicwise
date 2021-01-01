@@ -1,7 +1,8 @@
                    //with return type and with argument
 
 #include<stdio.h>
-int add(int,int);       //function declaration must end with semicolon and should be above main function
+int add(int,int);  
+int sub(int,int);     //function declaration must end with semicolon and should be above main function
 int main()
 {
     int a,b,sum=0,s=0;
@@ -10,7 +11,7 @@ int main()
     sum=add(a,b);        //function call must end with semicolon and should be inside main body
     printf("sum:%d",sum);
     s=sub(a,b);
-    printf("sub:%d",sub);
+    printf("sub:%d",s);
 }
 int add(int x, int y)    //function defination should not end with semicolon and should outside main body (upward or downword main body)
 {
