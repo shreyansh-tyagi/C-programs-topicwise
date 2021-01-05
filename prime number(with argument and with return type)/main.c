@@ -17,9 +17,9 @@ int main()
 int primenumber(int n)
 {
     int flog=0;
-    for(int i=2;i<a;i++)
+    for(int i=2;i<n;i++)
     {
-        if(a%i==0)
+        if(n%i==0)
         flog++;
 
     }
