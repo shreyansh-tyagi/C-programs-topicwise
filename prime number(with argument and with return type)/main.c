@@ -1,5 +1,5 @@
 #include<stdio.h>
-int primenumber(int a);
+int primenumber(int b);
 int main()
 {
     int n,flag;
