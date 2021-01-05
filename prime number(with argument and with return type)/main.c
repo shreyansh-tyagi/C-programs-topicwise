@@ -3,7 +3,7 @@ int primenumber(int);
 int main()
 {
     int n,flag;
-    printf("enter the value\n:");
+    printf("enter the value:\n");
     scanf("%d",&n);
     flag=primenumber(n);
     if(flag>0)
