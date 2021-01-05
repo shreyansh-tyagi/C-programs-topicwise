@@ -1,5 +1,5 @@
 #include<stdio.h>
-int primenumber(int);
+int primenumber(int a);
 int main()
 {
     int n,flag;
@@ -16,12 +16,12 @@ int main()
 }
 int primenumber(int a)
 {
-    int flag=0;
+    int flog=0;
     for(int i=2;i<a;i++)
     {
         if(a%i==0)
-        flag++;
+        flog++;
 
     }
-    return (flag);
+    return (flog);
 }
