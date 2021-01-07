@@ -1,21 +1,22 @@
 #include <stdio.h>
-void sum(int n);
-void main() {
-    int number;
+int sum(int n);
+
+int main() {
+    int number, result;
 
     printf("Enter a positive integer: ");
     scanf("%d", &number);
 
-    sum(number);
+    result = sum(number);
 
-   // return 0;
+    printf("sum = %d", result);
+    return 0;
 }
 
-void sum(int n) {
-    int a;
+int sum(int n) {
     if (n != 0)
         // sum() function calls itself
-        a=n + sum(n-1); 
+        return n + sum(n-1); 
     else
-        printf("sum = %d", a);
+        return n;
 }
