@@ -1,10 +1,10 @@
 #include<stdio.h>
 void deletion(int[],int);
-void insertarray(int[],int);
-//void ascending(int[],int);
+int insertarray(int[],int);
+void ascending(int[],int);
 void main()
 {
-int i,a[100],n,b,c=0,d=0,loc,key;
+int i,a[100],n,b,c=0,d=0,loc,key,x,y;
 char s;
 printf("enter how many element you want into the array: ");
 scanf("%d",&n);
@@ -68,8 +68,9 @@ switch(s)
     }
 }
 deletion(a,n);
-insertarray(a,n);
-//ascending(a,n);
+x=insertarray(a,n);
+y=n+x;
+ascending(a,y);
 }
 
 void deletion(int a[],int n)
@@ -108,7 +109,7 @@ void deletion(int a[],int n)
 
 }
 
-void insertarray(int a[],int n)
+int insertarray(int a[],int n)
 {
     int i,b[100],m,loc;
     char s;
@@ -130,6 +131,7 @@ void insertarray(int a[],int n)
             }
             printf("\nenter the location from where you want to insert the new array into existing array: ");
             scanf("%d",&loc);
+            return m;
 
     }
     switch(s)
@@ -157,4 +159,60 @@ void insertarray(int a[],int n)
             printf("ruko jara sabar kro.....kch aur kr lete fr\n");
         }
     } 
+
+}
+
+void ascending(int a[],int n)
+{
+    int i,j,temp;
+    char s;
+    printf("do want to sort the array:\ntype 'y' or 'n': ");
+    scanf("%s",&s);
+    switch(s)
+    {
+        case 'a':
+        {
+            for(i=1;i<=n;i++)
+            {
+                for(j=i;j<=n;j++)
+                {
+                    if(a[i]>a[j])
+                    {
+                        temp=a[i];
+                        a[i]=a[j];
+                        a[j]=temp;
+                    }
+                }
+
+            }
+            printf("\narray in ascending: ");
+            for(i=1;i<=n;i++)
+            {
+                printf(" %d",a[i]);
+            }
+            break;
+        }
+        case 'd':
+        {
+            for(i=1;i<=n;i++)
+            {
+                for(j=i;j<=n;j++)
+                {
+                    if(a[i]<a[j])
+                    {
+                        temp=a[i];
+                        a[i]=a[j];
+                        a[j]=temp;
+                    }
+                }
+
+            }
+            printf("\narray in descending: ");
+            for(i=1;i<=n;i++)
+            {
+                printf(" %d",a[i]);
+            }
+            break;
+        }
+    }
 }
