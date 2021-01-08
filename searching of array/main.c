@@ -19,7 +19,7 @@ for(i=1;i<=n;i++)
     printf(" %3d",a[i]);
 }
 //searching element inside array
-printf("\nenter the element you want to search: ");
+printf("\nenter the element you want to search inside the array: ");
 scanf("%d",&b);
 for(i=1;i<=n;i++)
 {
@@ -66,18 +66,19 @@ switch(s)
     }
 }
 deletion(a,n);
-
 }
+
 void deletion(int a[],int n)
 {
     int loc,i;
     char s;
-    printf("do you want to delete any element from the array:\n type 'y' or 'n' : ");
+    printf("\ndo you want to delete any element from the array:\n type 'y' or 'n' : ");
     scanf("%s",&s);
     if(s=='y')
     {
         printf("\nenter the location at which you want to delete the element: ");
         scanf("%d",&loc);
+        printf("\narray after deletion is :\n");
         a[loc]=a[loc+1];
     }
     switch(s)
@@ -88,7 +89,16 @@ void deletion(int a[],int n)
             {
                 a[i]=a[i+1];
             }
-            
+            for(i=1;i<=n;i++)
+            {
+               printf(" %3d",a[i]); 
+            }
+
+            break;
+        }
+        case 'n':
+        {
+            printf("nikalo fr\n");
         }
     }
 
