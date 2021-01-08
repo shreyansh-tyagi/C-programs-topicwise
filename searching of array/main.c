@@ -1,5 +1,6 @@
 #include<stdio.h>
 void deletion(int[],int);
+void insertarray(int[],int);
 void main()
 {
 int i,a[100],n,b,c=0,d=0,loc,key;
@@ -66,6 +67,7 @@ switch(s)
     }
 }
 deletion(a,n);
+insertarray(a,n);
 }
 
 void deletion(int a[],int n)
@@ -102,4 +104,34 @@ void deletion(int a[],int n)
         }
     }
 
+}
+
+void insertarray(int a[],int n)
+{
+    int i,b[100],m;
+    char s;
+    printf("do you want to insert another array into this array:\ntype 'y' or 'n' :");
+    scanf("%s",&s);
+    if(s=='y')
+    {
+    printf("enter  how many element you want to insert inside new array: ");
+    scanf("%d",&m);
+    for(i=1;i<=m;i++)
+    {
+        printf("enter the element inside new array: ");
+        scanf("%d",&b[i]);
+    }
+    printf("new array is :");
+    for(i=1;i<=n;i++)
+    {
+        printf(" %d",b[i]);
+    }
+    }
+    switch(s)
+    {
+        case 'y':
+        {
+            for(i=n;i)
+        }
+    }
 }
