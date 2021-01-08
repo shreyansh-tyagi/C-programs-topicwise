@@ -43,7 +43,7 @@ if(s=='y')
 {
 printf("If 'yes' Enter the new key element you want to insert:\n");
 scanf("%d",&key);
-printf("enter the location you want to insert the element:\n");
+printf("enter the location into which you want to insert the element:\n");
 scanf("%d",&loc);
 }
 switch(s)
@@ -108,30 +108,50 @@ void deletion(int a[],int n)
 
 void insertarray(int a[],int n)
 {
-    int i,b[100],m;
+    int i,b[100],m,loc;
     char s;
-    printf("do you want to insert another array into this array:\ntype 'y' or 'n' :");
+    printf("\ndo you want to insert another array into this array:\ntype 'y' or 'n': ");
     scanf("%s",&s);
     if(s=='y')
     {
-    printf("enter  how many element you want to insert inside new array: ");
-    scanf("%d",&m);
-    for(i=1;i<=m;i++)
-    {
-        printf("enter the element inside new array: ");
-        scanf("%d",&b[i]);
-    }
-    printf("new array is :");
-    for(i=1;i<=n;i++)
-    {
-        printf(" %d",b[i]);
-    }
+        printf("enter  how many element you want to insert inside new array: ");
+        scanf("%d",&m);
+        for(i=1;i<=m;i++)
+         {
+            printf("enter the element inside new array: ");
+            scanf("%d",&b[i]);
+         }
+         printf("new array is :\n");
+         for(i=1;i<=m;i++)
+            {
+               printf(" %d",b[i]);
+            }
+            printf("\nenter the location from where you want to insert the new array into existing array: ");
+            scanf("%d",&loc);
+
     }
     switch(s)
     {
         case 'y':
         {
-            for(i=n;i)
+            for(i=n;i>=loc;i--)
+            {
+                a[i+m]=a[i];
+            }
+            for(i=1;i<=m;i++)
+            {
+                a[loc]=b[i];
+            }
+            printf("\nafter insertion of new array into existing array: ");
+            for(i=1;i<=n+m;i++)
+            {
+                printf(" %3d",a[i]);
+            }
+            break;
         }
-    }
+        case 'n':
+        {
+            printf("ruko jara sabar kro.....kch aur kr lete fr\n");
+        }
+    } 
 }
