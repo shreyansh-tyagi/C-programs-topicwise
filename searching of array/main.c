@@ -131,7 +131,6 @@ int insertarray(int a[],int n)
             }
             printf("\nenter the location from where you want to insert the new array into existing array: ");
             scanf("%d",&loc);
-            return m;
 
     }
     switch(s)
@@ -159,6 +158,7 @@ int insertarray(int a[],int n)
             printf("ruko jara sabar kro.....kch aur kr lete fr\n");
         }
     } 
+    return m;
 
 }
 
@@ -166,7 +166,7 @@ void ascending(int x[],int n)
 {
     int i,j,temp;
     char s,sort;
-    printf("do want to sort the array:\ntype 'y' or 'n': ");
+    printf("\ndo you want to sort the array:\ntype 'y' or 'n': ");
     scanf("%s",&s);
     if(s=='y')
     {
