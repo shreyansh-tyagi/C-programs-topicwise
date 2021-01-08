@@ -162,13 +162,17 @@ int insertarray(int a[],int n)
 
 }
 
-void ascending(int a[],int n)
+void ascending(int x[],int n)
 {
     int i,j,temp;
-    char s;
+    char s,sort;
     printf("do want to sort the array:\ntype 'y' or 'n': ");
     scanf("%s",&s);
-    switch(s)
+    if(s=='y')
+    {
+    printf("\ntype 'a' for ascending and 'd' for descending: ");
+    scanf("%s",&sort);
+    switch(sort)
     {
         case 'a':
         {
@@ -176,11 +180,11 @@ void ascending(int a[],int n)
             {
                 for(j=i;j<=n;j++)
                 {
-                    if(a[i]>a[j])
+                    if(x[i]>x[j])
                     {
-                        temp=a[i];
-                        a[i]=a[j];
-                        a[j]=temp;
+                        temp=x[i];
+                        x[i]=x[j];
+                        x[j]=temp;
                     }
                 }
 
@@ -188,7 +192,7 @@ void ascending(int a[],int n)
             printf("\narray in ascending: ");
             for(i=1;i<=n;i++)
             {
-                printf(" %d",a[i]);
+                printf(" %d",x[i]);
             }
             break;
         }
@@ -198,11 +202,11 @@ void ascending(int a[],int n)
             {
                 for(j=i;j<=n;j++)
                 {
-                    if(a[i]<a[j])
+                    if(x[i]<x[j])
                     {
-                        temp=a[i];
-                        a[i]=a[j];
-                        a[j]=temp;
+                        temp=x[i];
+                        x[i]=x[j];
+                        x[j]=temp;
                     }
                 }
 
@@ -210,9 +214,15 @@ void ascending(int a[],int n)
             printf("\narray in descending: ");
             for(i=1;i<=n;i++)
             {
-                printf(" %d",a[i]);
+                printf(" %d",x[i]);
             }
             break;
         }
     }
+  }
+  else
+  {
+    printf("khel khatam");
+  }
+  
 }
