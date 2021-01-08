@@ -1,6 +1,7 @@
 #include<stdio.h>
 void deletion(int[],int);
 void insertarray(int[],int);
+//void ascending(int[],int);
 void main()
 {
 int i,a[100],n,b,c=0,d=0,loc,key;
@@ -68,6 +69,7 @@ switch(s)
 }
 deletion(a,n);
 insertarray(a,n);
+//ascending(a,n);
 }
 
 void deletion(int a[],int n)
@@ -141,6 +143,7 @@ void insertarray(int a[],int n)
             for(i=1;i<=m;i++)
             {
                 a[loc]=b[i];
+                loc++;
             }
             printf("\nafter insertion of new array into existing array: ");
             for(i=1;i<=n+m;i++)
