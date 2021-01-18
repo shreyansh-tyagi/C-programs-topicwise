@@ -1,7 +1,9 @@
 #include<stdio.h>
-void auto_class();
+void increment();
 void main()
 {
+    increment();
+    increment();
     increment();
     increment();
     increment();

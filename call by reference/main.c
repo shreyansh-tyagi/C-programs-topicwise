@@ -8,7 +8,7 @@ void swap(int*,int*);  //without return type and with argument// taking two inte
 void main()
 {
     int a,b;    //memory will allocated to a and b
-    printf("enter the value of a and b: ");
+    printf("enter the value of a and b: "); 
     scanf("%d%d",&a,&b);  //value will store at address of a and b
     printf("\n\nvalue of a=%d\n\nvalue of b=%d\n\n",a,b);
     printf("\n\naddress of a=%d\n\naddress of b=%d",&a,&b);
