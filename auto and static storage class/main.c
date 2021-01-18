@@ -5,8 +5,6 @@ void main()
     increment();
     increment();
     increment();
-    increment();
-    increment();
 } 
 void increment()
 {
