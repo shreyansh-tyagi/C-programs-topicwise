@@ -1,12 +1,12 @@
 #include<stdio.h>
-void increment();
+void auto_class();
 void main()
 {
-    increment();
-    increment();
-    increment();
+    auto_class();
+    auto_class();
+    auto_class();
 } 
-void increment()
+void auto_class()
 {
     auto int a=0;
     a+=1;
