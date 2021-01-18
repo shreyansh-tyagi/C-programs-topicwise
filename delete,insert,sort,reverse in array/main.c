@@ -2,6 +2,7 @@
 void deletion(int[],int);
 int insertarray(int[],int);
 void ascending(int[],int);
+void reverse(int[],int);
 void main()
 {
 int i,a[100],n,b,c=0,d=0,loc,key,x,y;
@@ -64,13 +65,14 @@ switch(s)
     }
     case'n':
     {
-        printf("\nchla ja b..k\n");
+        printf("\nsorry OOPS!\n");
     }
 }
 deletion(a,n);
 x=insertarray(a,n);
 y=n+x;
 ascending(a,y);
+reverse(a,y);
 }
 
 void deletion(int a[],int n)
@@ -103,7 +105,7 @@ void deletion(int a[],int n)
         }
         case 'n':
         {
-            printf("nikalo fr\n");
+            printf("sorry OOPS!\n");
         }
     }
 
@@ -222,7 +224,27 @@ void ascending(int x[],int n)
   }
   else
   {
-    printf("khel khatam");
+    printf("\nchlo fr reverse kr k dekh lete h");
   }
-  
 }
+  void reverse(int a[],int y)
+  {
+      char s;
+      printf("\ndo you want to reverse the array:\ntype 'y' or 'n' ");
+      scanf("%s",&s);
+      if(s=='y')
+      {
+          for(int i=y;i>=1;i--)
+          {
+              printf(" %d",a[i]);
+          }
+      }
+      else
+      {
+          printf("khel khatam");
+      }
+      
+
+  }
+
+  
