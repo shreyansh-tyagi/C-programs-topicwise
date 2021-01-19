@@ -3,6 +3,9 @@ void deletion(int[],int);
 int insertarray(int[],int);
 void ascending(int[],int);
 void reverse(int[],int);
+void evenodd(int [],int);
+void sum(int [],int);
+void prime(int [],int);
 void main()
 {
 int i,a[100],n,b,c=0,d=0,loc,key,x,y;
@@ -54,7 +57,7 @@ switch(s)
     {
         for(i=n;i>=loc;i--)
         {
-            a[i+1]=a[i];
+            a[i+1]=a[i]; //shifting by 1 element from last
         }
         a[loc]=key;
         for(i=1;i<=n+1;i++)
@@ -73,6 +76,7 @@ x=insertarray(a,n);
 y=n+x;
 ascending(a,y);
 reverse(a,y);
+evenodd(a,y);
 }
 
 void deletion(int a[],int n)
@@ -139,7 +143,7 @@ int insertarray(int a[],int n)
     {
         case 'y':
         {
-            for(i=n;i>=loc;i--)
+            for(i=n+1;i>=loc;i--)
             {
                 a[i+m]=a[i];
             }
@@ -149,10 +153,11 @@ int insertarray(int a[],int n)
                 loc++;
             }
             printf("\nafter insertion of new array into existing array: ");
-            for(i=1;i<=n+m;i++)
+            for(i=1;i<=(n+1+m);i++)
             {
                 printf(" %3d",a[i]);
             }
+            return (m+1);
             break;
         }
         case 'n':
@@ -160,7 +165,7 @@ int insertarray(int a[],int n)
             printf("ruko jara sabar kro.....kch aur kr lete fr\n");
         }
     } 
-    return m;
+    
 
 }
 
@@ -230,7 +235,7 @@ void ascending(int x[],int n)
   void reverse(int a[],int y)
   {
       char s;
-      printf("\ndo you want to reverse the array:\ntype 'y' or 'n' ");
+      printf("\ndo you want to reverse the array:\ntype 'y' or 'n': ");
       scanf("%s",&s);
       if(s=='y')
       {
@@ -241,10 +246,48 @@ void ascending(int x[],int n)
       }
       else
       {
-          printf("khel khatam");
+          printf("okay!");
       }
       
-
   }
+  void evenodd(int a[],int n)
+  {
+      int i,b[50],c[50];
+      char s;
+      printf("\ndo you want to perform even odd operation, type 'y' or 'n': ");
+      scanf("%s",&s);
+      if(s=='y')
+      {
+          for(i=1;i<=n;i++)
+          {
+              if(a[i]%2==0)
+              {
+                  b[i]=a[i];
+              }
+              else
+              {
+                  c[i]=a[i];
+              }
+
+          }
+          printf("\neven number from array: \n");
+          for(i=1;i<=n;i++)
+          {
+              printf(" %d",b[i]);
+          }
+          printf("\nodd number from array: \n");
+          for(i=1;i<=n;i++)
+          {
+              printf(" %d",c[i]);
+          }
+      }
+      else
+      {
+          printf("okay, then lets perform sum operation");
+      }
+      
+  }
+
+
 
   
