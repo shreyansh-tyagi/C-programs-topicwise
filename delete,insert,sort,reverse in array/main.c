@@ -1,5 +1,5 @@
 #include<stdio.h>
-void deletion(int[],int);
+void deletion(int[],int*);
 int insertarray(int[],int);
 void ascending(int[],int);
 void reverse(int[],int);
@@ -71,7 +71,7 @@ switch(s)
         printf("\nOKAY!\n");
     }
 }
-deletion(a,n);
+deletion(a,&n);
 x=insertarray(a,n);
 y=n+x;
 ascending(a,y);
@@ -81,7 +81,7 @@ sum(a,y);
 prime(a,y);
 }
 
-void deletion(int a[],int n)
+void deletion(int a[],int *n) //call by reference
 {
     int loc,i;
     char s;
@@ -98,20 +98,21 @@ void deletion(int a[],int n)
     {
         case 'y':
         {
-            for(i=loc+1;i<=n;i++)
+            for(i=loc+1;i<=*n;i++)
             {
                 a[i]=a[i+1];
             }
-            for(i=1;i<=n;i++)
+            for(i=1;i<=*n;i++)
             {
                printf(" %3d",a[i]); 
             }
-
             break;
         }
         case 'n':
         {
+            *n+=1;
             printf("OKAY!\n");
+            break;
         }
     }
 
@@ -145,7 +146,7 @@ int insertarray(int a[],int n)
     {
         case 'y':
         {
-            for(i=n+1;i>=loc;i--)
+            for(i=n;i>=loc;i--)
             {
                 a[i+m]=a[i];
             }
@@ -155,11 +156,11 @@ int insertarray(int a[],int n)
                 loc++;
             }
             printf("\nafter insertion of new array into existing array: ");
-            for(i=1;i<=(n+1+m);i++)
+            for(i=1;i<=(n+m);i++)
             {
                 printf(" %3d",a[i]);
             }
-            return (m+1);
+            return (m);
             break;
         }
         case 'n':
@@ -231,7 +232,7 @@ void ascending(int x[],int n)
   }
   else
   {
-    printf("\nchlo fr reverse kr k dekh lete h");
+    printf("\nchlo fr reverse kr k dekh lete h\n");
   }
 }
   void reverse(int a[],int y)
@@ -248,7 +249,7 @@ void ascending(int x[],int n)
       }
       else
       {
-          printf("OKAY!");
+          printf("OKAY!\n");
       }
       
   }
@@ -295,22 +296,39 @@ void ascending(int x[],int n)
       }
       else
       {
-          printf("\nokay, then lets perform sum operation");
+          printf("\nOKAY!\n");
       }
   }
       void sum(int a[],int n)
       {
           int sum=0;
+          char s;
+          printf("\ndo you want perform sum operation..type 'y' or 'n': ");
+          scanf("%s",&s);
+          if(s=='y')
+          {
           printf("\nthe sum is :");
           for(int i=1;i<=n;i++)
           {
               sum+=a[i];
           }
           printf(" %d",sum);
+          }
+          else
+          {
+              printf("\nOKAY!\n");
+          }
+          
+              
       }
       void prime(int a[],int n)
       {
           int i,j,m,f,b[50],large=0,c=0;
+          char s;
+          printf("\ndo you want to find the list of prime number from the array...\ntype 'y' or 'n': ");
+          scanf("%s",&s);
+          if(s=='y')
+          {
           for(i=1;i<=n;i++)
           {
               m=a[i];
@@ -347,6 +365,12 @@ void ascending(int x[],int n)
               }
           }
           printf("\nLargest prime number is: %d",large);
+          }
+          else
+          {
+              printf("\nkhel khatam\n");
+          }
+          
 
       }
 
