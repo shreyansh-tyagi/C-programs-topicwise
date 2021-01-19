@@ -333,7 +333,21 @@ void ascending(int x[],int n)
               }
               
           }
-          
+          printf("\nthere are %d prime numbers in this array: ",c);
+          printf("\n those prime number are: ");
+          for(i=1;i<=n;i++)
+          {
+              printf(" %d",b[i]);
+          }
+          for(i=1;i<=n;i++)
+          {
+              if(b[large]<b[i])
+              {
+                  large=b[i];
+              }
+          }
+          printf("\nLargest prime number is: %d",large);
+
       }
 
 
