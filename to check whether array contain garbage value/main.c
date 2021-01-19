@@ -1,7 +1,7 @@
 #include<stdio.h>
 void main()
 {
-    int a[]={};
+    int a[]={1,2};
    /* for(int i =0;i<=5;i++)
     {
         scanf("%d",&a[i]);
