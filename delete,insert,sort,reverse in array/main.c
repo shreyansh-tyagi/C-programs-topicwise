@@ -77,6 +77,8 @@ y=n+x;
 ascending(a,y);
 reverse(a,y);
 evenodd(a,y);
+sum(a,y);
+prime(a,y);
 }
 
 void deletion(int a[],int n)
@@ -293,10 +295,46 @@ void ascending(int x[],int n)
       }
       else
       {
-          printf("okay, then lets perform sum operation");
+          printf("\nokay, then lets perform sum operation");
       }
-      
   }
+      void sum(int a[],int n)
+      {
+          int sum=0;
+          printf("\nthe sum is :");
+          for(int i=1;i<=n;i++)
+          {
+              sum+=a[i];
+          }
+          printf(" %d",sum);
+      }
+      void prime(int a[],int n)
+      {
+          int i,j,m,f,b[50],large=0,c=0;
+          for(i=1;i<=n;i++)
+          {
+              m=a[i];
+              f=0;
+              for(j=1;j<=m;j++)
+              {
+                  if(m%j==0)
+                  {
+                      f++;
+                  }
+              }
+              if(f==2)
+              {
+                  b[i]=a[i];
+                  c++;
+              }
+              else
+              {
+                  b[i]=0;
+              }
+              
+          }
+          
+      }
 
 
 
