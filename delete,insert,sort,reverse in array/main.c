@@ -35,7 +35,7 @@ for(i=1;i<=n;i++)
         d++;
     }
 }
-if(d==1)
+if(d>=1)
 {
     printf("\nit is present at position: %d and the value is :%d",c,a[c]);
 }
@@ -68,7 +68,7 @@ switch(s)
     }
     case'n':
     {
-        printf("\nsorry OOPS!\n");
+        printf("\nOKAY!\n");
     }
 }
 deletion(a,n);
@@ -109,7 +109,7 @@ void deletion(int a[],int n)
         }
         case 'n':
         {
-            printf("sorry OOPS!\n");
+            printf("OKAY!\n");
         }
     }
 
@@ -246,7 +246,7 @@ void ascending(int x[],int n)
       }
       else
       {
-          printf("okay!");
+          printf("OKAY!");
       }
       
   }
@@ -266,8 +266,18 @@ void ascending(int x[],int n)
               }
               else
               {
+                  b[i]=0;
+              }
+              
+              if(a[i]%2!=0)
+              {
                   c[i]=a[i];
               }
+              else
+              {
+                  c[i]=0;
+              }
+              
 
           }
           printf("\neven number from array: \n");
