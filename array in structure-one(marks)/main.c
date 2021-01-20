@@ -1,3 +1,4 @@
+  
 #include<stdio.h>
 struct student
 {
@@ -11,19 +12,19 @@ void main()
     int i,n,j,sum,avg;
     printf("enter the value of n:");
     scanf("%d",&n);
-    for(i=0;i<=n;i++)
+    for(i=0;i<n;i++)
     {
         printf("enter the student id: ");
         scanf("%d",&a[i].id);
         printf("enter the student name: ");
         scanf("%s",a[i].name);
+        printf("enter the marks of 3 subjects: ");
         for(j=0;j<3;j++)
         {
-            printf("enter the marks of 3 subjects: ");
             scanf("%f",&a[i].marks[j]);
         }
     }
-    for(i=0;i<=n;i++)
+    for(i=0;i<n;i++)
     {
         printf("\nstudent id: %d",a[i].id);
         printf("\nstudent name: %s",a[i].name);
@@ -32,7 +33,7 @@ void main()
             printf("\nstudent marks: %f",a[i].marks[j]);
         }
     }
-    for(i=0;i<=n;i++)
+    for(i=0;i<n;i++)
     {
         sum=0;
         for(j=0;j<3;j++)
