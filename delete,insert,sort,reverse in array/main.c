@@ -92,8 +92,12 @@ void deletion(int a[],int *n) //call by reference
     {
         printf("\nenter the location at which you want to delete the element: ");
         scanf("%d",&loc);
+    
+    if(loc>(*n))
+    {
+        printf("opps! location out of limit of array");
     }
-    if(loc<=(*n))
+    else
     {
         printf("\narray after deletion is :\n");
         a[loc]=a[loc+1]; //deletion that particular element from array
@@ -120,11 +124,12 @@ void deletion(int a[],int *n) //call by reference
         }
     }
     }
-    else{
-        *n+=1;
-        printf("oops!");
     }
-
+    else{
+            *n+=1;
+            printf("OKAY!\n");
+    }
+    
 }
 // insertion of another array into existing array
 int insertarray(int a[],int n)
