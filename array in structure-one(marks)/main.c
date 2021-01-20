@@ -18,7 +18,7 @@ void main()
         scanf("%d",&a[i].id);
         printf("enter the student name: ");
         scanf("%s",a[i].name);
-        printf("enter the marks of 3 subjects: ");
+        printf("enter the marks of 3 subjects:\n");
         for(j=0;j<3;j++)
         {
             scanf("%f",&a[i].marks[j]);
