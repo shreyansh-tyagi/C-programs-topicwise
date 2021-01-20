@@ -42,6 +42,7 @@ if(d>=1)
 else{
     printf("\nsorry bhaiyo ye toh nai mil payega\n");
 }
+//insert one element into array
 printf("\nDo you want to insert any element into the array...\nType 'y' or 'n : ");
 scanf("%s",&s);
 if(s=='y')
@@ -71,16 +72,16 @@ switch(s)
         printf("\nOKAY!\n");
     }
 }
-deletion(a,&n);
-x=insertarray(a,n);
-y=n+x;
+deletion(a,&n); //address of n is passed as an argument to actual parameter
+x=insertarray(a,n); //control come back after executing insertarray function (if yes then return m and it get added  
+y=n+x;   // for next iteration otherwise if no then nothing will be retruned from insertarray function
 ascending(a,y);
 reverse(a,y);
 evenodd(a,y);
 sum(a,y);
 prime(a,y);
 }
-
+// deletion from array
 void deletion(int a[],int *n) //call by reference
 {
     int loc,i;
@@ -92,7 +93,7 @@ void deletion(int a[],int *n) //call by reference
         printf("\nenter the location at which you want to delete the element: ");
         scanf("%d",&loc);
         printf("\narray after deletion is :\n");
-        a[loc]=a[loc+1];
+        a[loc]=a[loc+1]; //deletion that particular element from array
     }
     switch(s)
     {
@@ -100,7 +101,7 @@ void deletion(int a[],int *n) //call by reference
         {
             for(i=loc+1;i<=*n;i++)
             {
-                a[i]=a[i+1];
+                a[i]=a[i+1]; //shifting towards left 
             }
             for(i=1;i<=*n;i++)
             {
@@ -110,6 +111,7 @@ void deletion(int a[],int *n) //call by reference
         }
         case 'n':
         {
+            // if no then deletion is not done ,and the size of array is increased by one
             *n+=1;
             printf("OKAY!\n");
             break;
@@ -117,7 +119,7 @@ void deletion(int a[],int *n) //call by reference
     }
 
 }
-
+// insertion of another array into existing array
 int insertarray(int a[],int n)
 {
     int i,b[100],m,loc;
@@ -148,8 +150,8 @@ int insertarray(int a[],int n)
         {
             for(i=n;i>=loc;i--)
             {
-                a[i+m]=a[i];
-            }
+                a[i+m]=a[i]; //shifting by the size of new array
+            }                //shifting towards right
             for(i=1;i<=m;i++)
             {
                 a[loc]=b[i];
@@ -160,7 +162,7 @@ int insertarray(int a[],int n)
             {
                 printf(" %3d",a[i]);
             }
-            return (m);
+            return (m); //if yes then the size of existing array will increase with the size of new array
             break;
         }
         case 'n':
@@ -171,7 +173,7 @@ int insertarray(int a[],int n)
     
 
 }
-
+//sorting in ascending and descending order
 void ascending(int x[],int n)
 {
     int i,j,temp;
@@ -235,6 +237,7 @@ void ascending(int x[],int n)
     printf("\nchlo fr reverse kr k dekh lete h\n");
   }
 }
+// reverse of array
   void reverse(int a[],int y)
   {
       char s;
@@ -253,6 +256,7 @@ void ascending(int x[],int n)
       }
       
   }
+  //even odd from array to another array
   void evenodd(int a[],int n)
   {
       int i,b[50],c[50];
@@ -299,6 +303,7 @@ void ascending(int x[],int n)
           printf("\nOKAY!\n");
       }
   }
+  //sum of array
       void sum(int a[],int n)
       {
           int sum=0;
@@ -321,6 +326,7 @@ void ascending(int x[],int n)
           
               
       }
+      //prime number from array
       void prime(int a[],int n)
       {
           int i,j,m,f,b[50],large=0,c=0;
@@ -357,6 +363,7 @@ void ascending(int x[],int n)
           {
               printf(" %d",b[i]);
           }
+          //largest prime number from array
           for(i=1;i<=n;i++)
           {
               if(b[large]<b[i])
