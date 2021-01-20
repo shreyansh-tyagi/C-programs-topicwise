@@ -3,11 +3,11 @@ struct student
 {
     int id;
     char name[30];
-    float marks[3]; //array variable //to get marks of 4 students (0 to 4)
+    float marks[3]; //array variable //to get marks of 3 students (0 to 2)
 };
 void main()
 {
-    struct student a[50];
+    struct student a[50];  // array of structure
     int i,n,j,sum,avg;
     printf("enter the value of n:");
     scanf("%d",&n);

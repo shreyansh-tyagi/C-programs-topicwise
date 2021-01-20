@@ -92,9 +92,11 @@ void deletion(int a[],int *n) //call by reference
     {
         printf("\nenter the location at which you want to delete the element: ");
         scanf("%d",&loc);
+    }
+    if(loc<=(*n))
+    {
         printf("\narray after deletion is :\n");
         a[loc]=a[loc+1]; //deletion that particular element from array
-    }
     switch(s)
     {
         case 'y':
@@ -116,6 +118,11 @@ void deletion(int a[],int *n) //call by reference
             printf("OKAY!\n");
             break;
         }
+    }
+    }
+    else{
+        *n+=1;
+        printf("oops!");
     }
 
 }
