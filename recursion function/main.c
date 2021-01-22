@@ -9,7 +9,7 @@ void main()
     result=recursion(n);
     printf("factorial of a number: %d",result);
 }
-int recursion(n)
+int recursion(int n)
 {
     int res;
     if(n==0)
