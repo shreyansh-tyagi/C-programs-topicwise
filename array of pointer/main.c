@@ -14,7 +14,7 @@ void main()
     {
         printf(" %d",a[i]);  //print the array
     }
-    printf("\n\naddress of the values stored in first array:\n\n");
+    printf("\n\naddresses of first array:\n\n");
     for(i=0;i<=n;i++)
     {
         printf(" %d",&a[i]); //address of first array
