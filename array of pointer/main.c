@@ -34,8 +34,8 @@ void main()
     {
         printf(" %d",*ptr[i]); //value at that address coz ptr holds the address of first array
         printf(" %d",*(a+i)); // value at the address of first array coz (a+i) gives the address of first array
-        printf(" %d",**(ptr+i)); //(ptr+i)= address of pointer array ,for example address of ptr[0]=4048
+        printf(" %d",**(ptr+i)); //(ptr+i)= base address of pointer array ,for example address of ptr[0]=4048
         // *(ptr+i)=value at that address of pointer array , for example adress of a[0]=2024 will be store in p[0]
-        //**(ptr+i)=value at the address of first array , fro example value at **(ptr+i)=**(ptr[0]=4048= a[0]=2024 =a[0]=1)
+        //**(ptr+i)=value at the address of first array , for example value at **(ptr+i)=**(ptr[0]=4048= a[0]=2024 =a[0]=1)
     }
 }
