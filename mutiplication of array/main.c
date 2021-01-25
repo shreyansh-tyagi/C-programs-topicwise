@@ -65,4 +65,9 @@ void main()
             printf("\n");
         }
     }
+    else
+    {
+        printf("coloumn of first matrix is not equal to the row of second matrix")
+    }
+    
 }
