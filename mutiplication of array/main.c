@@ -19,7 +19,7 @@ void main()
                 scanf("%d",&a[i][j]);
             }
         }
-        printf("first array:\n ");
+        printf("first array:\n");
         for(i=0;i<r1;i++)
         {
             for(j=0;j<c1;j++)
@@ -45,14 +45,14 @@ void main()
             }
             printf("\n");
         }
-        printf("multiplication of array:\n ");
+        printf("multiplication of array:\n");
         for(i=0;i<r1;i++)
         {
             for(j=0;j<c2;j++)
             {
                 for(k=0;k<c1;k++)
                 {
-                    c[i][j]+=a[i][k]*b[k][j];
+                    c[i][j]+=a[i][k]*b[j][k];
                 }
             }
         }
