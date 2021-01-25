@@ -19,14 +19,30 @@ void main()
                 scanf("%d",&a[i][j]);
             }
         }
-        printf("first array: ");
+        printf("first array:\n ");
         for(i=0;i<r1;i++)
         {
             for(j=0;j<c1;j++)
             {
-                printf("%d",a[i][j]);
+                printf(" %d",a[i][j]);
             }
             printf("\n");
+        }
+        
+        for(i=0;i<r2;i++)
+        {
+            for(j=0;j<c2;j++)
+            {
+                scanf("%d",&b[i][j]);
+            }
+        }
+        printf("second matrix: \n");
+        for(i=0;i<r2;i++)
+        {
+            for(j=0;j<c2;j++)
+            {
+                printf(" %d",b[i][j]);
+            }
         }
     }
 }
