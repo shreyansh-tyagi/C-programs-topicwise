@@ -43,6 +43,7 @@ void main()
             {
                 printf(" %d",b[i][j]);
             }
+            printf("\n");
         }
         printf("multiplication of array:\n ");
         for(i=0;i<r1;i++)
@@ -54,6 +55,14 @@ void main()
                     c[i][j]+=a[i][k]*b[k][j];
                 }
             }
+        }
+        for(i=0;i<r1;i++)
+        {
+            for(j=0;j<c2;j++)
+            {
+                printf(" %d",c[i][j]);
+            }
+            printf("\n");
         }
     }
 }
