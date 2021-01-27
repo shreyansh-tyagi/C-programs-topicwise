@@ -15,7 +15,7 @@ void main()
     printf("enter the value of n: ");
     scanf("%d",&n);
     printf("\n\nsize of structure: %d\n\n",sizeof(struct std));
-    ptr=(struct emp*)malloc(sizeof(struct std));//only one argument is used in malloc function and ptr will store the address of struct emp with it size
+    ptr=(struct std*)malloc(sizeof(struct std));//only one argument is used in malloc function and ptr will store the address of struct emp with it size
     if(ptr==NULL){
         printf("out of memory error:");}
     else{
