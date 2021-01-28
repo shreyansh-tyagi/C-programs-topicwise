@@ -7,7 +7,7 @@ void main()
     //ptr=a;
     for(i=0;i<=9;i++)
     {
-        ptr[i]=&a[i];
+        *(ptr+i)=a+i;
     }
     for(i=0;i<=9;i++)
     {
