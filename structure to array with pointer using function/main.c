@@ -1,14 +1,21 @@
 #include<stdio.h>
-void structure(int *,int);
-struct std
+void structure(int);
+struct std    //structure is a user defined data type
 { 
     int id;
-    char name[30];
+    char name[30];  //hence it is global declaration of structure therefore it can be accessed to all the function
     float marks[3];
 };
 int main()
 {
-    struct std e[10],*ptr;
+    int n;
+    printf("enter the value of n:");
+    scanf("%d",&n);
+    structure(n);
+}
+void structure (int n)
+{
+     struct std e[10],*ptr;
     int n,i,j;
     ptr=e;
     printf("enter the value of n:");
@@ -25,22 +32,4 @@ int main()
             scanf("%f",&(ptr+i)->marks[j]);
         }
     }
-    structure(e,n);
-}
-void structure (int *p,int n)
-{
-    int i,j;
-      for(i=0;i<n;i++)
-    {
-        printf("student id: ");
-        printf("%d",*(p+i)->id);
-        printf("student name: ");
-        printf("%s",*(p+i)->name);
-        for(j=0;j<3;j++)
-        {
-            printf("mark %d subject: ",j+1);
-            printf("%f",*(p+i)->marks[j]);
-        }
-    }
-
 }
