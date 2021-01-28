@@ -22,7 +22,25 @@ int main()
         for(j=0;j<3;j++)
         {
             printf("enter the mark %d subject: ",j+1);
-            scanf("%f",&(ptr+i)->marks[j])
+            scanf("%f",&(ptr+i)->marks[j]);
         }
     }
+    structure(e,n);
+}
+void structure (int *p,int n)
+{
+    int i,j;
+      for(i=0;i<n;i++)
+    {
+        printf("student id: ");
+        printf("%d",*(p+i)->id);
+        printf("student name: ");
+        printf("%s",*(p+i)->name);
+        for(j=0;j<3;j++)
+        {
+            printf("mark %d subject: ",j+1);
+            printf("%f",*(p+i)->marks[j]);
+        }
+    }
+
 }
