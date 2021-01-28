@@ -13,12 +13,12 @@ int main()
     scanf("%d",&n);
     structure(n);
 }
-void structure (int n)   //
+void structure (int n)   //using user defined data type in a user defined function
 {
     struct std e[10],*ptr;
     int i,j;
-    ptr=e;
-    for(i=0;i<n;i++)
+    ptr=e; //passing base address of array "e" , if we doesn't use & then by default the base address of arrray is
+    for(i=0;i<n;i++) //array variable already hold the base address 
     {
         printf("enter the student id:\n ");
         scanf("%d",&(ptr+i)->id);
