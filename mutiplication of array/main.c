@@ -50,7 +50,7 @@ void main()
         {
             for(j=0;j<c2;j++)
             {
-                for(k=0;k<c2;k++)
+                for(k=0;k<c1;k++)
                 {
                     c[i][j]+=a[i][k]*b[k][j];
                 }

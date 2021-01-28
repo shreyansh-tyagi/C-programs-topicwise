@@ -44,7 +44,7 @@ void enterData(int firstMatrix[][10], int secondMatrix[][10], int rowFirst, int 
 	{
 		for(j = 0; j < columnFirst; ++j)
 		{
-			printf("Enter elements a%d%d: ", i + 1, j + 1);
+			printf("Enter elements a%d%d: ", i, j);
 			scanf("%d", &firstMatrix[i][j]);
 		}
 	}
@@ -54,7 +54,7 @@ void enterData(int firstMatrix[][10], int secondMatrix[][10], int rowFirst, int 
 	{
 		for(j = 0; j < columnSecond; ++j)
 		{
-			printf("Enter elements b%d%d: ", i + 1, j + 1);
+			printf("Enter elements b%d%d: ", i, j);
 			scanf("%d", &secondMatrix[i][j]);
 		}
 	}
