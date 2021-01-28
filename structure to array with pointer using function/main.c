@@ -13,23 +13,31 @@ int main()
     scanf("%d",&n);
     structure(n);
 }
-void structure (int n)
+void structure (int n)   //
 {
-     struct std e[10],*ptr;
-    int n,i,j;
+    struct std e[10],*ptr;
+    int i,j;
     ptr=e;
-    printf("enter the value of n:");
-    scanf("%d",&n);
     for(i=0;i<n;i++)
     {
-        printf("enter the student id: ");
+        printf("enter the student id:\n ");
         scanf("%d",&(ptr+i)->id);
-        printf("enter the student name: ");
+        printf("enter the student name:\n ");
         scanf("%s",(ptr+i)->name);
         for(j=0;j<3;j++)
         {
-            printf("enter the mark %d subject: ",j+1);
+            printf("enter the mark %d subject:\n ",j+1);
             scanf("%f",&(ptr+i)->marks[j]);
+        }
+    }
+    for(i=0;i<n;i++)
+    {
+        printf("student id:%d\n",(ptr+i)->id);
+        printf("student name:%s\n",(ptr+i)->name);
+        for(j=0;j<3;j++)
+        {
+            printf("mark %d subject:\n ",j+1);
+            printf("%f\n",(ptr+i)->marks[j]);
         }
     }
 }
