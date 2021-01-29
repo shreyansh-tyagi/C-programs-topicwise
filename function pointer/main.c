@@ -7,6 +7,7 @@ void main()
                              //pointer argument and return a integer value 
     printf("enter the value of a and b: \n");
     scanf("%d%d",&a,&b);
+    printf("before swap: a=%d\nb=%d",a,b);
     ptr=&swap; //passing the address of swap function block to function pointer ptr
     r1=ptr(&a,&b);
     printf("after swap: a=%d\nb=%d",a,b);
