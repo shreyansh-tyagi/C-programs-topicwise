@@ -7,10 +7,10 @@ void main()
                              //pointer argument and return a void means null value
     printf("enter the value of a and b: \n");
     scanf("%d%d",&a,&b);
-    printf("before swap: a=%d\nb=%d",a,b);
+    printf("before swap: a= %d  b= %d",a,b);
     ptr=&swap; //passing the address of 'swap' function block to 'ptr' function pointer
-    ptr(&a,&b);
-    printf("after swap: a=%d\nb=%d",a,b);
+    ptr(&a,&b); //function call through function poiinter variable
+    printf("\nafter swap: a= %d  b= %d",a,b);
 }
 void swap(int *x,int *y)
 {
@@ -18,5 +18,5 @@ void swap(int *x,int *y)
     temp=*x;
     *x=*y;   //call by reference process
     *y=temp;
-    printf("after swap: x=%d\ny=%d",x,y);
+    printf("\nafter swap: x= %d  y= %d",*x,*y);
 }
