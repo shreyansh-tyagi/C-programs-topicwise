@@ -6,7 +6,8 @@ void main()
     fgets(a,sizeof(a),stdin);
     printf("\n your name: ");
     puts(a);
-    gets(a);
+    printf("enter your name : ");
+    gets(b);
     printf("your name: ");
     puts(b);
 }
