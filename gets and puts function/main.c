@@ -1,7 +1,7 @@
 #include<stdio.h>
 void main()
 {
-    char a[50];
+    char a[1];
     printf("enter your name : ");
     gets(a);
     printf("\n your name: ");
