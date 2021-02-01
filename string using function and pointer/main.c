@@ -1,11 +1,11 @@
 #include<stdio.h>
-void copystring(char *);
+void copystring(char *); //user defined function
 void main()
 {
     char a[50];
-    void (*stringptr)(char *);  //function pointer
+    void (*stringptr)(char *);  //function pointer which take character pointer as a argument
     printf("enter your name along with your address: ");
-    stringptr=&copystring;
+    stringptr=&copystring; //passing a address of user defined function to a function pointer
     stringptr(a);
 }
 void copystring(char *b)
