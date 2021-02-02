@@ -15,7 +15,7 @@ void copystring(char *b) // b contain the based address of array a
     fgets(b,50,stdin);
     printf("your information is: ");
     puts(b);
-    printf("value at a[0]: ",*p);
-    printf("value at a[0]: ",*p+1);
+    printf("value at a[0]: %c\n",*p);
+    printf("value at a[1]: %c",*p+3);
 
 }
