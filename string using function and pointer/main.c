@@ -8,12 +8,14 @@ void main()
     stringptr=&copystring; //passing a address of user defined function to a function pointer
     stringptr(a);
 }
-void copystring(char *b)
+void copystring(char *b) // b contain the based address of array a
 {
     char *p;
-    printf("%p",b);
+    p=b; //value of b is passed to character pointer p and the value of b is actually the base address of array a
     fgets(b,50,stdin);
     printf("your information is: ");
     puts(b);
+    printf("value at a[0]: ",*p);
+    printf("value at a[0]: ",*p+1);
 
 }
