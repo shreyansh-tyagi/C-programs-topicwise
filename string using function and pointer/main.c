@@ -10,6 +10,8 @@ void main()
 }
 void copystring(char *b)
 {
+    char *p;
+    printf("%p",b);
     fgets(b,50,stdin);
     printf("your information is: ");
     puts(b);
