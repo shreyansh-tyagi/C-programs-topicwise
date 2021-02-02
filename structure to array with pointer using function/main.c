@@ -48,5 +48,5 @@ int sizeofstructure(void)
 {
     struct std k;
     return (sizeof(k));
-    printf
+    printf("size:%d ",sizeof(k.id));
 }
