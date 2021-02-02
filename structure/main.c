@@ -1,6 +1,7 @@
 //structure is the user defined datatype in which n number of different datatype can be defined.
 #include<stdio.h>
 #include<conio.h>
+void check();
 struct emp                //global declaration
 {                         //hence it is global declaration therefore the structure data type is accessible to all the function
     int e_id;
@@ -14,7 +15,7 @@ int main()
     printf("the size of structure is: %d\n\n ",sizeof(e));
     printf("size is: %d\n\n", sizeof(struct emp));
     printf("enter employee id: \n\nenter employee name: \n\nenter employee salary: \n\n ");
-    scanf("%d%s%f",&e.e_id,&e.e_name,&e.e_salary);
+    scanf("%d%s%f",&e.e_id,e.e_name,&e.e_salary);
     printf("\n\nemployee id: %d\n\nemployee name: %s\n\nemployee salary: %f\n\n",e.e_id,e.e_name,e.e_salary);
 
                                                          /* here e is the access specifier through
@@ -22,7 +23,7 @@ int main()
 
                                                         // %s is used to read string type variable
                                                         // %f is used to read float type variable
-
+check();
 }
 void check()
 {
