@@ -1,5 +1,6 @@
 #include<stdio.h>
 void structure(int);
+int sizeofstructure(void);
 struct std    //structure is a user defined data type
 { 
     int id;
@@ -8,10 +9,12 @@ struct std    //structure is a user defined data type
 };
 int main()
 {
-    int n;
+    int n,size=0;
     printf("enter the value of n:");
     scanf("%d",&n);
     structure(n);
+    size=sizeofstructure();
+    printf("size: %d",size);
 }
 void structure (int n)   //using user defined data type in a user defined function
 {
@@ -40,4 +43,10 @@ void structure (int n)   //using user defined data type in a user defined functi
             printf("%f\n",(ptr+i)->marks[j]);
         }
     }
+}
+int sizeofstructure(void)
+{
+    struct std k;
+    return (sizeof(k));
+    printf
 }
