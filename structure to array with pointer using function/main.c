@@ -47,6 +47,10 @@ void structure (int n)   //using user defined data type in a user defined functi
 int sizeofstructure(void)
 {
     struct std k;
-    printf("size:%d ",sizeof(k.id));
+    printf("size of id of integer type: %d\n ",sizeof(k.id));
+    
+    printf("size of name of charcter type: %d\n ",sizeof(k.name));
+    
+    printf("size of marks of float type: %d\n ",sizeof(k.marks));
     return (sizeof(k));
 }
