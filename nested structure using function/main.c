@@ -7,13 +7,15 @@ struct std {
     char name[30];
     struct dob{
         int day,month,year;
-    }d1;
-}s[50];
+    }d1,d;
+}s[50],e;
 void main()
 {
     int n;
     printf("enter, of how many student you want the data: ");
     scanf("%d",&n);
+    printf("size of student structure: %d\n",sizeof(e));
+    printf("size of student structure: %d",sizeof(e.d));
     nested_structure(n);
 
 }
