@@ -7,8 +7,8 @@ struct std {
     char name[30];
     struct dob{
         int day,month,year;
-    }d1,d[50];
-}s1,a[50];
+    }d1;
+}s[50];
 void main()
 {
     int n;
@@ -22,15 +22,15 @@ void nested_structure(int n)
     for(int i=0;i,n;i++)
     {
     printf("\nenter the id: ");
-    scanf("%d",&s1.id);
+    scanf("%d",&s[i].id);
     printf("\nenter the name: ");
-    scanf("%s",s1.name);
+    scanf("%s",s[i].name);
     printf("\nenter the dateofbirth: ");
-    scanf("%d%d%d",&s1.d1.day,&s1.d1.month,&s1.d1.year);
+    scanf("%d%d%d",&s[i].d1.day,&s[i].d1.month,&s[i].d1.year);
     }
     for(int j=0;j<n;j++){
-    printf("\nid: %d",s1.id);
-    printf("\nname: %s",s1.name);
-    printf("\ndateofbirth: %d-%d-%d",s1.d1.day,s1.d1.month,s1.d1.year);
+    printf("\nid: %d",s[j].id);
+    printf("\nname: %s",s[j].name);
+    printf("\ndateofbirth: %d-%d-%d",s[j].d1.day,s[j].d1.month,s[j].d1.year);
     }
 }
