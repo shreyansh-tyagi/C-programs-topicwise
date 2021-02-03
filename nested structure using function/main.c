@@ -12,7 +12,7 @@ struct std {
 void main()
 {
     int n;
-    printf("enter the value of n: ");
+    printf("enter, of how many student you want the data: ");
     scanf("%d",&n);
     nested_structure(n);
 
