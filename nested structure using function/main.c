@@ -19,7 +19,7 @@ void main()
 }
 void nested_structure(int n)
 {
-    for(int i=0;i,n;i++)
+    for(int i=0;i<n;i++)
     {
     printf("\nenter the id: ");
     scanf("%d",&s[i].id);
