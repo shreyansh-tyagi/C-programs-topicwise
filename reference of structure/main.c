@@ -12,6 +12,7 @@ struct student{
     }m;
 }s[50],*p;
 void structure_function(struct student *ptr,int); //function declaration
+void sum_of_marks(struct student *marks_pointer,int);
 void main()
 {
     p=s;
@@ -38,6 +39,7 @@ void main()
     }
     }
     structure_function_pointer(p,n);
+    sum_of_marks(p,n);
 }
 void structure_function(struct student *ptr,int n)
 {
@@ -54,4 +56,22 @@ void structure_function(struct student *ptr,int n)
     }
     }
 
+}
+void sum_of_marks(struct student *marks_pointer,int n)
+{
+    int i,j;
+    float sum,avg;
+    for(i=0;i<n;i++)
+    {
+        sum=0;
+        for(j=0;j<3;j++)
+        {
+            sum=sum+((marks_pointer+i)->m.marks[j]);
+        }
+        avg=0;
+        avg=sum/3;
+        printf("sum of student%d: %f",j+1,sum);
+        printf("average of student%d: %f",j+1,avg);
+
+    }
 }
