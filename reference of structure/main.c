@@ -50,7 +50,7 @@ void structure_function(struct student *ptr,int n)
     printf("\ndate-of-birht: %d-%d-%d",(p+i)->d.day,(p+i)->d.month,(p+i)->d.year);
       for(int j=0;j<3;j++)
     {
-        printf("\nmarks of %d subject: %d",j+1,(p+i)->m.marks[j]);
+        printf("\nmarks of %d subject: %f",j+1,(p+i)->m.marks[j]);
     }
     }
 
