@@ -46,13 +46,13 @@ void structure_function(struct student *ptr,int n)
     int i;
      for(i=0;i<n;i++)
     {
-    printf("\nid: %d",(ptr+i)->id);
+    printf("\nid: %d\n",(ptr+i)->id);
     printf("\nage: %d",(ptr+i)->age);
     printf("\nname: %s",(ptr+i)->name);
-    printf("\ndate-of-birth: %d-%d-%d",(ptr+i)->d.day,(ptr+i)->d.month,(ptr+i)->d.year);
+    printf("\ndate-of-birth: %d-%d-%d\n",(ptr+i)->d.day,(ptr+i)->d.month,(ptr+i)->d.year);
       for(int j=0;j<3;j++)
     {
-        printf("\nmarks of %d subject: %f",j+1,(ptr+i)->m.marks[j]);
+        printf("\nmarks of %d subject: %f\n",j+1,(ptr+i)->m.marks[j]);
     }
     }
 
@@ -70,8 +70,8 @@ void sum_of_marks(struct student *marks_pointer,int n)
         }
         avg=0;
         avg=sum/3;
-        printf("sum of student%d: %f",i+1,sum);
-        printf("average of student%d: %f",i+1,avg);
+        printf("\nsum of student %d: %f",i+1,sum);
+        printf("\naverage of student %d: %f\n",i+1,avg);
 
     }
 }
