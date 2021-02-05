@@ -34,7 +34,7 @@ void main()
     for(int j=0;j<3;j++)
     {
         printf("\nenter the marks of %d subject: ",j+1);
-        scanf("%d",&(p+i)->m.marks[j]);
+        scanf("%f",&(p+i)->m.marks[j]);
     }
     }
     structure_function_pointer(p,n);
@@ -44,13 +44,13 @@ void structure_function(struct student *ptr,int n)
     int i;
      for(i=0;i<n;i++)
     {
-    printf("\nid: %d",(p+i)->id);
-    printf("\nage: %d",(p+i)->age);
-    printf("\nname: %s",(p+i)->name);
-    printf("\ndate-of-birht: %d-%d-%d",(p+i)->d.day,(p+i)->d.month,(p+i)->d.year);
+    printf("\nid: %d",(ptr+i)->id);
+    printf("\nage: %d",(ptr+i)->age);
+    printf("\nname: %s",(ptr+i)->name);
+    printf("\ndate-of-birth: %d-%d-%d",(ptr+i)->d.day,(ptr+i)->d.month,(ptr+i)->d.year);
       for(int j=0;j<3;j++)
     {
-        printf("\nmarks of %d subject: %f",j+1,(p+i)->m.marks[j]);
+        printf("\nmarks of %d subject: %f",j+1,(ptr+i)->m.marks[j]);
     }
     }
 
