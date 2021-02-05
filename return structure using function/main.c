@@ -6,13 +6,13 @@ struct student
 };
 
 // function prototype
-struct student abc();
+struct student abc(); //function declaration which return structure student data and with argument
 
 int main()
 {
     struct student s;
-
-    s = abc();
+    struct student (*pointer_to_student)(); //function pointer which is having same retrun 
+    s = abc(); //function call of struct return type
 
     printf("\nDisplaying information\n");
     printf("Name: %s", s.name);
@@ -20,7 +20,7 @@ int main()
     
     return 0;
 }
-struct student abc() 
+struct student abc()  //function definition
 {
   struct student s;
 
