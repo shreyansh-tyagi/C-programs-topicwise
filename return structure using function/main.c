@@ -30,5 +30,5 @@ struct student abc()
   printf("Enter age: ");
   scanf("%d", &s.age);
   
-  return s1;
+  return s;
 }	
