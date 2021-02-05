@@ -8,12 +8,13 @@ struct student{
         int day,month,year;
     }d;
 }s[50],*p;
-void structure_function(struct student *ptr); //function declaration
+void structure_function(struct student *ptr,int); //function declaration
 void main()
 {
     p=s;
     int i,n;
-    void (*structure_function_pointer)(struct student *ptr);
+    void (*structure_function_pointer)(struct student *ptr,int); //this function pointer points to that 
+    //function only which have two argument of structure student type and int type with no return type 
     structure_function_pointer=&structure_function;
     printf("\nenter the number of student ");
     scanf("%d",&n);
@@ -27,5 +28,17 @@ void main()
     scanf("%[^\n]%*c",(p+i)->name);
     printf("\nenter the day,month,year: ");
     scanf("%d%d%d",&(p+i)->d.day,&(p+i)->d.month,&(p+i)->d.year);
+    }
+    structure_function_pointer(p,n);
+}
+void structure_function(struct student *ptr,int n)
+{
+    int i;
+     for(i=0;i<n;i++)
+    {
+    printf("\nid: %d",(p+i)->id);
+    printf("\nage: %d",(p+i)->age);
+    printf("\nname: %[^\n]%*c",(p+i)->name);
+    printf("\ndate-of-birht: %d-%d-%d",(p+i)->d.day,(p+i)->d.month,(p+i)->d.year);
     }
 }
