@@ -70,8 +70,8 @@ void sum_of_marks(struct student *marks_pointer,int n)
         }
         avg=0;
         avg=sum/3;
-        printf("sum of student%d: %f",j+1,sum);
-        printf("average of student%d: %f",j+1,avg);
+        printf("sum of student%d: %f",i+1,sum);
+        printf("average of student%d: %f",i+1,avg);
 
     }
 }
