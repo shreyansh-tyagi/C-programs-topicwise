@@ -7,6 +7,9 @@ struct student{
     struct dateofbirth{
         int day,month,year;
     }d;
+    struct marks_of_student{
+        float marks[3];
+    }
 }s[50],*p;
 void structure_function(struct student *ptr,int); //function declaration
 void main()
