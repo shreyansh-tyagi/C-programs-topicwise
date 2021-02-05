@@ -33,7 +33,7 @@ void main()
     scanf("%d%d%d",&(p+i)->d.day,&(p+i)->d.month,&(p+i)->d.year);
     for(int j=0;j<3;j++)
     {
-        printf("enter the marks of %d subject: ",j+1);
+        printf("\nenter the marks of %d subject: ",j+1);
         scanf("%d",&(p+i)->m.marks[j]);
     }
     }
@@ -48,5 +48,10 @@ void structure_function(struct student *ptr,int n)
     printf("\nage: %d",(p+i)->age);
     printf("\nname: %s",(p+i)->name);
     printf("\ndate-of-birht: %d-%d-%d",(p+i)->d.day,(p+i)->d.month,(p+i)->d.year);
+      for(int j=0;j<3;j++)
+    {
+        printf("\nmarks of %d subject: %d",j+1,(p+i)->m.marks[j]);
     }
+    }
+
 }
