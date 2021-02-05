@@ -11,9 +11,10 @@ struct student abc(); //function declaration which return structure student data
 int main()
 {
     struct student s;
-    struct student (*pointer_to_student)(); //function pointer which is having same retrun 
-    s = abc(); //function call of struct return type
-
+    struct student (*pointer_to_student)(); //function pointer which is having same return type as function have
+    //now this function pointer can only point to that function who have no argument and have struct return type
+    pointer_to_student=&abc;
+    s=pointer_to_student(); //function call of struct return type
     printf("\nDisplaying information\n");
     printf("Name: %s", s.name);
     printf("\nRoll: %d", s.age);
