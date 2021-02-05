@@ -9,7 +9,7 @@ struct student{
     }d;
     struct marks_of_student{
         float marks[3];
-    }
+    }m;
 }s[50],*p;
 void structure_function(struct student *ptr,int); //function declaration
 void main()
@@ -31,6 +31,11 @@ void main()
     scanf("%s",(p+i)->name);
     printf("\nenter the day,month,year: ");
     scanf("%d%d%d",&(p+i)->d.day,&(p+i)->d.month,&(p+i)->d.year);
+    for(int j=0;j<3;j++)
+    {
+        printf("enter the marks of %d subject: ",j+1);
+        scanf("%d",&(p+i)->m.marks[j]);
+    }
     }
     structure_function_pointer(p,n);
 }
