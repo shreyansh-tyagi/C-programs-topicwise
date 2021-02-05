@@ -25,7 +25,7 @@ void main()
     printf("\nenter age: ");
     scanf("%d",&(p+i)->age);
     printf("\nenter name: ");
-    scanf("%[^\n]%*c",(p+i)->name);
+    scanf("%[^\n]%*c",&(p+i)->name);
     printf("\nenter the day,month,year: ");
     scanf("%d%d%d",&(p+i)->d.day,&(p+i)->d.month,&(p+i)->d.year);
     }
