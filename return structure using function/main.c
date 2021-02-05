@@ -17,7 +17,7 @@ int main()
     s=pointer_to_student(); //function call of struct return type
     printf("\nDisplaying information\n");
     printf("Name: %s", s.name);
-    printf("\nRoll: %d", s.age);
+    printf("\nage: %d", s.age);
     
     return 0;
 }

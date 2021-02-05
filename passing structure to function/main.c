@@ -11,7 +11,7 @@ int main() {
    struct student s;
 
    printf("Enter name: ");
-   scanf("%s", s.name);
+   scanf("%s", &s.name);
 
    printf("Enter age: ");
    scanf("%d", &s.age);
