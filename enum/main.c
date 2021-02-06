@@ -16,6 +16,7 @@ int n;
 enum days d;
 printf("enter the value of n for days between (1-7): ");
 scanf("%d",&n);
+if(n<=7){
 d=n;
 printf("\n\n");
 if((d==saturday)||(d==sunday))
@@ -28,4 +29,5 @@ else
         printf("\n\n");
 }
 printf("\n\n");
+}
 }
