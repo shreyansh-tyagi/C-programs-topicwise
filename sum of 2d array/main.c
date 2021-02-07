@@ -5,9 +5,9 @@ void main()
     int i,j,n,a[10][10],b[10][10],sum[10][10],avg[50][50];
     printf("enter the value of n\n");
     scanf("%d",&n);
-    for(i=0;i<=n;i++)
+    for(i=0;i<n;i++)
     {
-        for(j=0;j<=n;j++)
+        for(j=0;j<n;j++)
         {
             printf("enter the value of first array:");
             scanf("%d",&a[i][j]);
@@ -17,9 +17,9 @@ void main()
     }
     printf("\n\n");
     printf("First matrix:\n");
-    for(i=0;i<=n;i++)
+    for(i=0;i<n;i++)
     {
-        for(j=0;j<=n;j++)
+        for(j=0;j<n;j++)
         {
             printf(" %d",a[i][j]);
         }
@@ -27,9 +27,9 @@ void main()
     }
     printf("\n\n");
     printf("second matrix:\n");
-    for(i=0;i<=n;i++)
+    for(i=0;i<n;i++)
     {
-        for(j=0;j<=n;j++)
+        for(j=0;j<n;j++)
         {
             printf(" %d",b[i][j]);
         }
@@ -37,9 +37,9 @@ void main()
     }
     printf("\n\n");
     printf("Sum:\n");
-    for(i=0;i<=n;i++)
+    for(i=0;i<n;i++)
     {
-        for(j=0;j<=n;j++)
+        for(j=0;j<n;j++)
         {
             sum[i][j]=a[i][j]+b[i][j];
             printf(" %d",sum[i][j]);
@@ -49,9 +49,9 @@ void main()
    
     printf("average:\n\n");
 
-    for(i=0;i<=n;i++)
+    for(i=0;i<n;i++)
     {
-        for(j=0;j<=n;j++)
+        for(j=0;j<n;j++)
         {
             avg[i][j]=sum[i][j]/n;
             printf(" %d",avg[i][j]);
