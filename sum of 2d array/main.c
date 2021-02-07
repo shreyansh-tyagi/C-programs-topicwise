@@ -2,7 +2,7 @@
 #include<conio.h>
 void main()
 {
-    int i,j,n,a[10][10],b[10][10],sum[10][10],mul[10][10],avg[50][50];
+    int i,j,n,a[10][10],b[10][10],sum[10][10],avg[50][50];
     printf("enter the value of n\n");
     scanf("%d",&n);
     for(i=0;i<=n;i++)
@@ -46,18 +46,7 @@ void main()
         }
         printf("\n");
     }
-    printf("\n\n");
-    printf("Multiplication:\n");
-    for(i=0;i<=n;i++)
-    {
-        for(j=0;j<=n;j++)
-        {
-            mul[i][j]=a[i][j]*b[i][j];
-            printf(" %d",mul[i][j]);
-        }
-        printf("\n");
-    }
-    printf("\n\n");
+   
     printf("average:\n\n");
 
     for(i=0;i<=n;i++)
