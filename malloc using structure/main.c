@@ -21,10 +21,10 @@ void main()
     if(ptr==NULL){
         printf("out of memory error:");}
     else{
-    for(i=0;i<=n;i++)
+    for(i=0;i<n;i++)
     {
         printf("enter the student id: ");
-        scanf("%d",&(ptr+i)->s_id);
+        scanf("%d",(ptr+i)->s_id);
         printf("enter the student name: ");
         scanf("%s",(ptr+i)->s_name);
         for(j=0;j<=3;j++)
@@ -34,21 +34,21 @@ void main()
         }
     }
     }
-    for(i=0;i<=n;i++)
+    for(i=0;i<n;i++)
     {
         printf(" \n\nthe student id: %d",(ptr+i)->s_id);
         printf("\n\nthe student name: %s",(ptr+i)->s_name);
-        for(j=0;j<=3;j++)
+        for(j=0;j<3;j++)
         {
             printf("\n\nthe student marks: %f",(ptr+i)->s_marks[j]);
         }
 
 
     }
-    for(i=0;i<=n;i++)
+    for(i=0;i<n;i++)
     {
         sum=0;
-        for(j=0;j<=3;j++)
+        for(j=0;j<3;j++)
         {
             sum=sum+(ptr+i)->s_marks[j];
         }
