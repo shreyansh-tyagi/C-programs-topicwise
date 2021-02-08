@@ -24,10 +24,10 @@ void main()
     for(i=0;i<n;i++)
     {
         printf("enter the student id: ");
-        scanf("%d",(ptr+i)->s_id);
+        scanf("%d",&(ptr+i)->s_id);
         printf("enter the student name: ");
         scanf("%s",(ptr+i)->s_name);
-        for(j=0;j<=3;j++)
+        for(j=0;j<3;j++)
         {
             printf("enter the student marks: ");
             scanf("%f",&(ptr+i)->s_marks[j]);
