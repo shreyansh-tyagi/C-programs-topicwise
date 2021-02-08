@@ -35,7 +35,7 @@ int main()
         // Print the elements of the array 
         printf("The elements of the array are: "); 
         for (i = 0; i < n; ++i) { 
-            printf("%d, ", ptr[i]); 
+            printf(" %d", ptr[i]); 
         } 
     } 
   
