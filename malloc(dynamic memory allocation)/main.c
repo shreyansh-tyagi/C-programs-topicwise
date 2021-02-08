@@ -5,10 +5,10 @@
 
 int main()
 {
-    int n,i,*arr;
+    int n,i;
     printf("enter the value of n: ");
     scanf("%d",&n);
-    arr=(int*)malloc(sizeof(int));
+    int *arr=(int*)malloc(sizeof(int)); //type of pointer variable and the typecasting is same which is of integer type
     printf("size of arr: %d",sizeof(arr));
     for(i=0;i<=n;i++)
     {

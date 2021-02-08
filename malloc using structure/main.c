@@ -10,7 +10,9 @@ struct std
 };
 void main()
 {
-    struct std *ptr; //hence it is dynamic memory allocation therefore taking pointer variable to fetch structure data
+    struct std *ptr; //hence we are storing the structure std data therefore we have to typecaste that from void pointer 
+    //to structure std data 
+    //the data type of pointer variable should be same as the typecasting datatype
     int i,n,j,sum,avg;
     printf("enter the value of n: ");
     scanf("%d",&n);
