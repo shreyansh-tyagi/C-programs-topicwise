@@ -39,7 +39,7 @@ void structure(int n,int m)
     printf("\nenter age: ");
     scanf("%d",&(s+i)->age);
     printf("\nenter name: ");
-    gets((s+i)->name);
+    scanf("%s",(s+i)->name);
     printf("\nenter the day-of-birth: ");
     scanf("%d%d%d",&(s+i)->d.day,&(s+i)->d.month,&(s+i)->d.year);
     for(j=0;j<m;j++)
@@ -52,7 +52,7 @@ void structure(int n,int m)
     {
     printf("\nid: %d",(s+i)->id);
     printf("\nage: %d",(s+i)->age);
-    puts((s+i)->name);
+    printf("\nname: %s",(s+i)->name);
     printf("\nday-of-birth: %d%d%d",(s+i)->d.day,(s+i)->d.month,(s+i)->d.year);
     for(j=0;j<m;j++)
     {
@@ -70,7 +70,7 @@ void structure(int n,int m)
     printf("\nenter age: ");
     scanf("%d",&(s+i)->age);
     printf("\nenter name: ");
-    fgets((s+i)->name,sizeof(s->name),stdin);
+    scanf("%s",(s+i)->name);
     printf("\nenter the day-of-birth: ");
     scanf("%d%d%d",&(s+i)->d.day,&(s+i)->d.month,&(s+i)->d.year);
     for(j=0;j<m;j++)
@@ -83,7 +83,7 @@ void structure(int n,int m)
     {
     printf("\nid: %d",(s+i)->id);
     printf("\nage: %d",(s+i)->age);
-    puts((s+i)->name);
+    printf("name: %s",(s+i)->name);
     printf("\nday-of-birth: %d%d%d",(s+i)->d.day,(s+i)->d.month,(s+i)->d.year);
     for(j=0;j<m;j++)
     {
