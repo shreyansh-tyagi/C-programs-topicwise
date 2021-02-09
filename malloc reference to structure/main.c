@@ -10,23 +10,24 @@ struct student{
     struct marks_of_student{
         float marks[3];
     }m;
-};
+}e;
+void size_of_structure(int);
 void structure_function(struct student *ptr,int); //function declaration
 void sum_of_marks(struct student *marks_pointer,int);
-//int size_of_structure ();
 void main()
 {
 
     int i,n;
 
-    void (*structure_function_pointer)(struct student *ptr,int); //this function pointer points to that 
+    void (*structure_function_pointer)(struct student *,int); //this function pointer points to that 
     //function only which have two argument of structure student type and int type with no return type 
     structure_function_pointer=&structure_function;
+    void(*sum_of_marks_function_pointer)(struct student *,int);
+    sum_of_marks_function_pointer=&sum_of_marks;
     printf("\nenter the number of student ");
     scanf("%d",&n);
     struct student *p=(struct student*)malloc(n*sizeof(struct student)); //data type of pointer variable and 
     //typcasted variable should same
-    printf("size: %d",sizeof(p));
     for(i=0;i<n;i++)
     {
     printf("\nenter id: ");
@@ -44,9 +45,8 @@ void main()
     }
     }
     structure_function_pointer(p,n);
-    sum_of_marks(p,n);
-   // s=size_of_structure();
-    //printf("size: %d",s);
+    sum_of_marks_function_pointer(p,n);
+    size_of_structure(n);
 }
 void structure_function(struct student *ptr,int n)
 {
@@ -81,4 +81,9 @@ void sum_of_marks(struct student *marks_pointer,int n)
         printf("\naverage of student %d: %f\n",i+1,avg);
 
     }
+}
+void size_of_structure(int n)
+{
+    struct student e;
+    printf("size: %d",sizeof(e));
 }
