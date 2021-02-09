@@ -39,7 +39,7 @@ void structure(int n,int m)
     printf("\nenter age: ");
     scanf("%d",&(s+i)->age);
     printf("\nenter name: ");
-    fgets((s+i)->name,sizeof(s->name),stdin);
+    gets((s+i)->name);
     printf("\nenter the day-of-birth: ");
     scanf("%d%d%d",&(s+i)->d.day,&(s+i)->d.month,&(s+i)->d.year);
     for(j=0;j<m;j++)
