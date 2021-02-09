@@ -14,7 +14,7 @@ int main()
     printf("\nenter the array elemnts: ");
     for(i=0;i<=n;i++)
     {
-        scanf("%d",&(*(arr+i)));
+        scanf("%d",arr+i);
     }
     for(i=0;i<=n;i++)
     {
