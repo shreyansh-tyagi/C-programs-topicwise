@@ -10,13 +10,14 @@ struct student{
     struct marks_of_student{
         float marks[3];
     }m;
-}*p;
+};
 void structure_function(struct student *ptr,int); //function declaration
 void sum_of_marks(struct student *marks_pointer,int);
 void main()
 {
 
     int i,n;
+    struct student *p=(struct student*)malloc(n*sizeof(struct student));
     void (*structure_function_pointer)(struct student *ptr,int); //this function pointer points to that 
     //function only which have two argument of structure student type and int type with no return type 
     structure_function_pointer=&structure_function;
