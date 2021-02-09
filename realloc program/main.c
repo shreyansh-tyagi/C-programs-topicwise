@@ -10,7 +10,7 @@ struct std{
     struct marks{
         float marks[50];
     }ma;
-}*s;
+}*s,e;
 void structure(int,int);
 void main()
 {
@@ -25,7 +25,7 @@ void main()
 }
 void structure(int n,int m)
 {
-    int i,j;
+    int i,j,a;
     s=(struct std*)malloc(n*sizeof(struct std));
     if(s==NULL)
     {
@@ -59,11 +59,12 @@ void structure(int n,int m)
         printf("\nmarks of %d subject: %f",j+1,(s+i)->ma.marks[j]);
     }
     }
-    
+    a=n*sizeof(e);
+    printf("\n\nsize of structure after malloc: %d",a);
     }
     n++;
     s=realloc(s,n*sizeof(struct std));
-    for(i=0;i<n+1;i++)
+    for(i=0;i<n;i++)
     {
     printf("\nenter id: ");
     scanf("%d",&(s+i)->id);
@@ -79,7 +80,7 @@ void structure(int n,int m)
         scanf("%f",&(s+i)->ma.marks[j]);
     }
     }
-    for(i=0;i<n+1;i++)
+    for(i=0;i<n;i++)
     {
     printf("\nid: %d",(s+i)->id);
     printf("\nage: %d",(s+i)->age);
@@ -90,5 +91,8 @@ void structure(int n,int m)
         printf("\nmarks of %d subject: %f",j+1,(s+i)->ma.marks[j]);
     }
     }
+    
+    a=n*sizeof(e);
+    printf("\n\nsize of structure after realloc: %d",a);
     
     }
