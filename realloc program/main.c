@@ -15,7 +15,7 @@ void structure(int,int);
 void main()
 {
     int n,m;
-    void (*structure_function_pointer)(struct std *,int);
+    void (*structure_function_pointer)(int,int);
     printf("\nenter the value of n: ");
     scanf("%d",&n);
     printf("enter the value of m: ");
