@@ -12,7 +12,6 @@ struct std{
     }ma;
 }*s;
 void structure(int,int);
-void sum_of_marks(int,int);
 void main()
 {
     int n,m;
@@ -23,9 +22,6 @@ void main()
     scanf("%d",&m);
     structure_function_pointer=&structure;
     structure_function_pointer(n,m);
-    structure_function_pointer=&sum_of_marks;
-    structure_function_pointer(n,m);
-
 }
 void structure(int n,int m)
 {
@@ -67,7 +63,7 @@ void structure(int n,int m)
     }
     n++;
     s=realloc(s,n*sizeof(struct std));
-    for(i=0;i<n;i++)
+    for(i=0;i<n+1;i++)
     {
     printf("\nenter id: ");
     scanf("%d",&(s+i)->id);
@@ -83,7 +79,7 @@ void structure(int n,int m)
         scanf("%f",&(s+i)->ma.marks[j]);
     }
     }
-    for(i=0;i<n;i++)
+    for(i=0;i<n+1;i++)
     {
     printf("\nid: %d",(s+i)->id);
     printf("\nage: %d",(s+i)->age);
@@ -96,4 +92,3 @@ void structure(int n,int m)
     }
     
     }
-}
