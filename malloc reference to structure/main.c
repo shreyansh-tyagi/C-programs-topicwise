@@ -18,13 +18,15 @@ void main()
 {
 
     int i,n;
-    struct student *p=(struct student*)malloc(n*sizeof(struct student)); //data type of pointer variable and 
-    //typcasted variable should same
+
     void (*structure_function_pointer)(struct student *ptr,int); //this function pointer points to that 
     //function only which have two argument of structure student type and int type with no return type 
     structure_function_pointer=&structure_function;
     printf("\nenter the number of student ");
     scanf("%d",&n);
+    struct student *p=(struct student*)malloc(n*sizeof(struct student)); //data type of pointer variable and 
+    //typcasted variable should same
+    printf("size: %d",sizeof(p));
     for(i=0;i<n;i++)
     {
     printf("\nenter id: ");
