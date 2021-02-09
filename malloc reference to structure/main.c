@@ -85,5 +85,7 @@ void sum_of_marks(struct student *marks_pointer,int n)
 void size_of_structure(int n)
 {
     struct student e;
-    printf("size: %d",sizeof(e));
+    int a=0;
+    a=(n*sizeof(e));
+    printf("size: %d",a);
 }
