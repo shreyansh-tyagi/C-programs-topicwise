@@ -9,8 +9,8 @@ struct std{
     }d;
     struct marks{
         float marks;
-    }*m;
-}*s;
+    }*ma;
+}*s,p;
 void structure(int,int);
 void sum_of_marks(int,int);
 void main()
@@ -29,5 +29,17 @@ void main()
 }
 void structure(int n,int m)
 {
+    int i,j;
     s=(struct std*)malloc(n*sizeof(struct std));
+    p.ma=(struct marks*)calloc(m,sizeof(float));
+    for(i=0;i<n;i++)
+    {
+    printf("\nenter id: ");
+    scanf("%d",&s->id);
+    printf("\nenter age: ");
+    scanf("%d",&s->age);
+    printf("enter name: ");
+    fgets(s->name,sizeof(s->name),stdin);
+    
+    }
 }
