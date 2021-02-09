@@ -8,9 +8,9 @@ struct std{
         int day,month,year;
     }d;
     struct marks{
-        float marks;
-    }*ma;
-}*s,p;
+        float marks[50];
+    }ma;
+}*s;
 void structure(int,int);
 void sum_of_marks(int,int);
 void main()
@@ -31,15 +31,20 @@ void structure(int n,int m)
 {
     int i,j;
     s=(struct std*)malloc(n*sizeof(struct std));
-    p.ma=(struct marks*)calloc(m,sizeof(float));
     for(i=0;i<n;i++)
     {
     printf("\nenter id: ");
-    scanf("%d",&s->id);
+    scanf("%d",&(s+i)->id);
     printf("\nenter age: ");
-    scanf("%d",&s->age);
+    scanf("%d",&(s+i)->age);
     printf("enter name: ");
-    fgets(s->name,sizeof(s->name),stdin);
-    
+    fgets((s+i)->name,sizeof(s->name),stdin);
+    printf("enter the day-of-birth: ");
+    scanf("%d%d%d",&(s+i)->d.day,&(s+i)->d.month,&(s+i)->d.year);
+    for(j=0;j<m;j++)
+    {
+        printf("enter the marks of %d subject: ",j+1);
+        scanf("%f",&(s+i)->ma.marks[j]);
+    }
     }
 }
