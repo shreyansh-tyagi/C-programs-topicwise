@@ -13,10 +13,11 @@ struct student{
 };
 void structure_function(struct student *ptr,int); //function declaration
 void sum_of_marks(struct student *marks_pointer,int);
+int size_of_structure (struct student *ptr);
 void main()
 {
 
-    int i,n;
+    int i,n,s;
     struct student *p=(struct student*)malloc(n*sizeof(struct student)); //data type of pointer variable and 
     //typcasted variable should same
     void (*structure_function_pointer)(struct student *ptr,int); //this function pointer points to that 
@@ -42,6 +43,7 @@ void main()
     }
     structure_function_pointer(p,n);
     sum_of_marks(p,n);
+    s=size_of_structure(p);
 }
 void structure_function(struct student *ptr,int n)
 {
@@ -76,4 +78,8 @@ void sum_of_marks(struct student *marks_pointer,int n)
         printf("\naverage of student %d: %f\n",i+1,avg);
 
     }
+}
+int size_of_student(struct student *ptr)
+{
+    return(sizeof(ptr));
 }

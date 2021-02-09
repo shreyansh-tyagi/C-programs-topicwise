@@ -6,7 +6,7 @@ struct student
 };
 
 // function prototype
-struct student abc(); //function declaration which return structure student data and with argument
+struct student abc(); //function declaration which return structure student data and with no argument
 
 int main()
 {
