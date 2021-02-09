@@ -15,8 +15,9 @@ void structure_function(struct student *ptr,int); //function declaration
 void sum_of_marks(struct student *marks_pointer,int);
 void main()
 {
-    p=s;
+
     int i,n;
+    p=s;
     void (*structure_function_pointer)(struct student *ptr,int); //this function pointer points to that 
     //function only which have two argument of structure student type and int type with no return type 
     structure_function_pointer=&structure_function;
