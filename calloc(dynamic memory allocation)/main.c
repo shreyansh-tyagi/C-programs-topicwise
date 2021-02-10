@@ -5,7 +5,7 @@
 
 int main()
 {
-    int n,i,*arr,a;
+    int n,i,*arr,a,m;
     printf("enter the value of n: ");
     scanf("%d",&n);
     arr=(int*)calloc(n,sizeof(int));  //calloc function will take two argument first is length of array(5 or anything) and size of datatype(int)
@@ -18,6 +18,17 @@ int main()
         scanf("%d",arr+i);
     }
     for(i=0;i<n;i++)
+    {
+        printf(" %d",*(arr+i));
+    }
+    arr=realloc(arr,n*sizeof(int));
+    printf("enter the value of m to reallocate the memory: ");
+    scanf("%d",&m);
+    for(i=n;i<n+m;i++)
+    {
+        scanf("%d",arr+i);
+    }
+    for(i=n;i<n+m;i++)
     {
         printf(" %d",*(arr+i));
     }
