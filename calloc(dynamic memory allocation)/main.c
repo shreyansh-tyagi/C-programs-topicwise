@@ -35,11 +35,7 @@ int main()
         printf(" %d",*(arr+i));
     }
     free(arr);
-    printf("after freed memory the array is : ");
-    for(i=n;i<n+m;i++)
-    {
-        scanf("%d",arr+i);
-    }
+    printf("\nafter freed memory the array is : \n");
     for(i=0;i<n+m;i++)
     {
         printf(" %d",*(arr+i));
