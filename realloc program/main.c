@@ -64,7 +64,7 @@ void structure(int n,int m)
     }
     n++;
     s=realloc(s,n*sizeof(struct std));
-    for(i=0;i<n;i++)
+    for(i=1;i<n;i++)
     {
     printf("\nenter id: ");
     scanf("%d",&(s+i)->id);
