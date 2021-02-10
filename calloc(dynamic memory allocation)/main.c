@@ -21,10 +21,10 @@ int main()
     {
         printf(" %d",*(arr+i));
     }
-    arr=realloc(arr,n*sizeof(int));
     printf("\nenter the value of m to reallocate the memory: ");
     scanf("%d",&m);
-     a=(n*m)*sizeof(int);
+    arr=realloc(arr,m*sizeof(int));
+    a=n*sizeof(int)+m*sizeof(int);
     printf("\ntotal size : %d\n",a);
     for(i=n;i<n+m;i++)
     {
