@@ -84,16 +84,19 @@ void structure(int n,int m)
     {
     printf("\nid: %d",(s+i)->id);
     printf("\nage: %d",(s+i)->age);
-    printf("name: %s",(s+i)->name);
-    printf("\nday-of-birth: %d%d%d",(s+i)->d.day,(s+i)->d.month,(s+i)->d.year);
+    printf("\nname: %s",(s+i)->name);
+    printf("\nday-of-birth: %d-%d-%d",(s+i)->d.day,(s+i)->d.month,(s+i)->d.year);
     for(j=0;j<m;j++)
     {
-        printf("\nmarks of %d subject: %f",j+1,(s+i)->ma.marks[j]);
+        printf("\nmarks of %d subject: %f\n",j+1,(s+i)->ma.marks[j]);
     }
     }
     
     a=n*sizeof(e);
     printf("\n\nsize of structure after realloc: %d",a);
     free(s);
+    
+    a=n*sizeof(e);
+    printf("\n\nsize of structure after realloc: %d",a);
     
     }
