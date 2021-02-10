@@ -94,5 +94,6 @@ void structure(int n,int m)
     
     a=n*sizeof(e);
     printf("\n\nsize of structure after realloc: %d",a);
+    free(s);
     
     }
