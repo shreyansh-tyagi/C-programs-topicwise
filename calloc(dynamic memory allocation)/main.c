@@ -24,6 +24,8 @@ int main()
     arr=realloc(arr,n*sizeof(int));
     printf("enter the value of m to reallocate the memory: ");
     scanf("%d",&m);
+     a=n*sizeof(int);
+    printf("total size : %d",a);
     for(i=n;i<n+m;i++)
     {
         scanf("%d",arr+i);
