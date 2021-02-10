@@ -22,15 +22,15 @@ int main()
         printf(" %d",*(arr+i));
     }
     arr=realloc(arr,n*sizeof(int));
-    printf("enter the value of m to reallocate the memory: ");
+    printf("\nenter the value of m to reallocate the memory: ");
     scanf("%d",&m);
-     a=n*sizeof(int);
-    printf("total size : %d",a);
+     a=(n*m)*sizeof(int);
+    printf("\ntotal size : %d",a);
     for(i=n;i<n+m;i++)
     {
         scanf("%d",arr+i);
     }
-    for(i=n;i<n+m;i++)
+    for(i=0;i<n+m;i++)
     {
         printf(" %d",*(arr+i));
     }
