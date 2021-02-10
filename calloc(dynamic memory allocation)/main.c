@@ -25,7 +25,7 @@ int main()
     printf("\nenter the value of m to reallocate the memory: ");
     scanf("%d",&m);
      a=(n*m)*sizeof(int);
-    printf("\ntotal size : %d",a);
+    printf("\ntotal size : %d\n",a);
     for(i=n;i<n+m;i++)
     {
         scanf("%d",arr+i);
