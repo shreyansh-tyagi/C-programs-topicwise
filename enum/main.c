@@ -9,12 +9,13 @@ enum days
 {
     monday=1,
     tuesday,wednesday,thursday,friday,saturday,sunday
-}d;
+};
 void main()
 {
+enum days d;
 int n;
 
-printf("size: %d",sizeof(d));
+printf("size: %d\n",sizeof(d));
 printf("enter the value of n for days between (1-7): ");
 scanf("%d",&n);
 if(n<=7){
