@@ -1,4 +1,6 @@
 i_am shreyansh trying to add this text into mytext.txt file
 hello_this_is the file in which i am going to 
 perform some read and wrire operation of file
-handling topici am shreyansh now trying to append this text into mytext.txt file i am shreyansh now trying to append this text into mytext.txt file
+handling topici am shreyansh now trying to append this text into mytext.txt file 
+i am shreyansh now trying to append this text into mytext.txt file 
+i am shreyansh now trying to append this text into mytext.txt file
