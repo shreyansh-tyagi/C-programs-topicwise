@@ -4,6 +4,9 @@
 void main()
 {
     FILE *ptr=NULL;
-    ptr
-    printf();
+    char string[50];
+    char s[50]="this is the text i gonna append in test.txt file";
+    ptr=fopen("D://c programs//file handling write and print//test.txt","a");
+    fscanf(ptr,"%s",string);
+    printf("the file is: %s",string);
 }
