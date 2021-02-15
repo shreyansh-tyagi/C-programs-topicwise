@@ -16,10 +16,11 @@ int main()
 {
     int n,m,i,j;
     void (*structure_function_pointer)(struct std *,int,int);
-    printf("\nenter the number the student: ");
+    printf("\nenter the number of student: ");
     scanf("%d",&n);
     printf("enter the number of subjects where subjects should not be more than 10: ");
     scanf("%d",&m);
+    if(m<=10){
     structure_function_pointer=&structure;
     s=(struct std*)calloc(n,sizeof(struct std));
     if(s==NULL)
@@ -33,7 +34,7 @@ int main()
     scanf("%d",&(s+i)->id);
     printf("\nenter age: ");
     scanf("%d",&(s+i)->age);
-    printf("\nenter name: ");
+    printf("\nenter name(use 'underscore(_)' for space): ");
     scanf("%s",(s+i)->name);
     printf("\nenter the day-of-birth: ");
     scanf("%d%d%d",&(s+i)->d.day,&(s+i)->d.month,&(s+i)->d.year);
@@ -45,7 +46,7 @@ int main()
     }
     structure_function_pointer(s,n,m);
 }
-}
+}}
 void structure(struct std *s,int n,int m)
 {
    int i,j;
