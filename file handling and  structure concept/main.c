@@ -55,12 +55,13 @@ void structure(struct std *s,int n,int m)
     for(i=0;i<n;i++)
     {
     fprintf(ptr,"\nid: %d",(s+i)->id);
-    fprintf(ptr,"\nage: %d",(s+i)->age);
     fprintf(ptr,"\nname: %s",((s+i)->name));
     fprintf(ptr,"\nday-of-birth: %d-%d-%d",(s+i)->d.day,(s+i)->d.month,(s+i)->d.year);
+    fprintf(ptr,"\nage: %d",(s+i)->age);
     for(j=0;j<m;j++)
     {
         fprintf(ptr,"\nmarks of %d subject: %f",j+1,(s+i)->ma.marks[j]);
     }
     }
 }
+
