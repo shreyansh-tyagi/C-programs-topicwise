@@ -8,7 +8,7 @@ struct std {
         int day,month,year;
     }d;
     struct marks{
-    float marks[100];
+    float marks[20];
     }ma;
 }*s;
 void structure_function(struct std *,int);
@@ -16,6 +16,10 @@ void sum_of_marks(struct std *,int);
 void main()
 {
     int n,m;
+    void structure_function_pointer(struct std *,int);
+    structure_function_pointer=&structure_function;
+    void sum_of_marks_function_pointer(struct std * ,int);
+    sum_of_marks_function_pointer=&sum_of_marks;
     printf("\nEnter the number of student: ");
     scanf("%d",&n);
     printf("\nEnter the number of subjects: ");
