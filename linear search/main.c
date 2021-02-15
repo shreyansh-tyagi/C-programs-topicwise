@@ -1,13 +1,13 @@
 #include <stdio.h> 
 void findElement(int[], int, int);  
 int main() { 
-    int arr[] = { 1, 2, 3, 4, 5, 6 };  
+    int arr[] = { 10, 20, 30, 40, 50, 60 };  
       
     // no of elements 
     int n = 6;   
       
     // key to be searched  
-    int key = 3;  
+    int key = 40;  
   
     // Calling function to find the key  
     findElement(arr, n, key);  
