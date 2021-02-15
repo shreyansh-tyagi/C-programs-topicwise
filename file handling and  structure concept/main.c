@@ -50,15 +50,17 @@ int main()
 void structure(struct std *s,int n,int m)
 {
    int i,j;
+   FILE *ptr=NULL;
+   ptr=fopen("D://c programs//file handling and structure concept//student details.txt","a");
     for(i=0;i<n;i++)
     {
-    printf("\nid: %d",(s+i)->id);
-    printf("\nage: %d",(s+i)->age);
-    printf("\nname: %s",((s+i)->name));
-    printf("\nday-of-birth: %d-%d-%d",(s+i)->d.day,(s+i)->d.month,(s+i)->d.year);
+    fprintf(ptr,"\nid: %d",(s+i)->id);
+    fprintf(ptr,"\nage: %d",(s+i)->age);
+    fprintf(ptr,"\nname: %s",((s+i)->name));
+    fprintf(ptr,"\nday-of-birth: %d-%d-%d",(s+i)->d.day,(s+i)->d.month,(s+i)->d.year);
     for(j=0;j<m;j++)
     {
-        printf("\nmarks of %d subject: %f",j+1,(s+i)->ma.marks[j]);
+        fprintf(ptr,"\nmarks of %d subject: %f",j+1,(s+i)->ma.marks[j]);
     }
     }
 }
