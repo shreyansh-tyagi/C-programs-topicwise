@@ -10,7 +10,7 @@ struct std{
     struct marks{
         float marks[50];
     }ma;
-}*s,e;
+}*s;
 void structure(struct std *,int,int);
 int main()
 {
@@ -51,7 +51,7 @@ void structure(struct std *s,int n,int m)
 {
    int i,j;
    FILE *ptr=NULL;
-   ptr=fopen("D://c programs//file handling and structure concept//student details.txt","a");
+   ptr=fopen("student details.txt","a");
     for(i=0;i<n;i++)
     {
     fprintf(ptr,"\nid: %d",(s+i)->id);
