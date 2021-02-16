@@ -23,3 +23,15 @@ marks of 4 subject: 58.000000
 marks of 5 subject: 49.000000
 Total marks of ravi_dutt: 278.000000
 Percentage of ravi_dutt: 55.599998
+id: 3
+name: albin_mathew
+day-of-birth: 12-12-1997
+age: 23
+marks of 1 subject: 45.000000
+marks of 2 subject: 56.000000
+marks of 3 subject: 76.000000
+marks of 4 subject: 67.000000
+marks of 5 subject: 49.000000
+marks of 6 subject: 69.000000
+Total marks of albin_mathew: 362.000000
+Percentage of albin_mathew: 60.333332
