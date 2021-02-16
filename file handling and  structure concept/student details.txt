@@ -1,2 +1,21 @@
 STUDENT DETAILS :-
 
+
+id: 1
+name: shreyansh_tyagi
+day-of-birth: 2-9-1999
+age: 21
+marks of 1 subject: 60.000000
+marks of 2 subject: 55.000000
+marks of 3 subject: 76.000000
+marks of 4 subject: 86.000000
+marks of 5 subject: 67.000000Total marks of shreyansh_tyagi: 344.000000Percentage of shreyansh_tyagi: 68.800003
+id: 2
+name: ravi_dutt
+day-of-birth: 20-9-1998
+age: 22
+marks of 1 subject: 45.000000
+marks of 2 subject: 55.000000
+marks of 3 subject: 50.000000
+marks of 4 subject: 60.000000
+marks of 5 subject: 70.000000Total marks of ravi_dutt: 280.000000Percentage of ravi_dutt: 56.000000

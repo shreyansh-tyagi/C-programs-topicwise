@@ -70,8 +70,8 @@ void structure(struct std *s,int n,int m)
     }
     avg=0;
     avg=sum/m;
-    fprintf(ptr,"Total marks of %s: %f",(s+i)->name,sum);
-    fprintf(ptr,"Percentage of %s: %f",(s+i)->name,avg);
+    fprintf(ptr,"\nTotal marks of %s: %f",(s+i)->name,sum);
+    fprintf(ptr,"\nPercentage of %s: %f",(s+i)->name,avg);
 
     }
 }
