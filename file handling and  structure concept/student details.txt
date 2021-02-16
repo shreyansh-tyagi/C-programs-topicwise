@@ -1,3 +1,29 @@
 STUDENT DETAILS :-
 
 
+
+
+id: 1
+name: shreyansh_tyagi
+day-of-birth: 2-9-1999
+age: 21
+marks of 1 subject: 48.000000
+marks of 2 subject: 45.000000
+marks of 3 subject: 43.000000
+marks of 4 subject: 78.000000
+marks of 5 subject: 76.000000
+Total marks of shreyansh_tyagi: 290.000000
+Percentage of shreyansh_tyagi: 58.000000
+
+
+id: 2
+name: anuj_yadav
+day-of-birth: 15-2-1998
+age: 22
+marks of 1 subject: 56.000000
+marks of 2 subject: 57.000000
+marks of 3 subject: 34.000000
+marks of 4 subject: 45.000000
+marks of 5 subject: 44.000000
+Total marks of anuj_yadav: 236.000000
+Percentage of anuj_yadav: 47.200001
