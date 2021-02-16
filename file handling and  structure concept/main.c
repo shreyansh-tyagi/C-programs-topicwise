@@ -55,7 +55,7 @@ void structure(struct std *s,int n,int m)
    ptr=fopen("student details.txt","a");
     for(i=0;i<n;i++)
     {
-    fprintf(ptr,"\nid: %d",(s+i)->id);
+    fprintf(ptr,"\n\nid: %d",(s+i)->id);
     fprintf(ptr,"\nname: %s",((s+i)->name));
     fprintf(ptr,"\nday-of-birth: %d-%d-%d",(s+i)->d.day,(s+i)->d.month,(s+i)->d.year);
     fprintf(ptr,"\nage: %d",(s+i)->age);
