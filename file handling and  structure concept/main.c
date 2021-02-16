@@ -50,6 +50,7 @@ int main()
 void structure(struct std *s,int n,int m)
 {
    int i,j;
+   float sum,avg;
    FILE *ptr=NULL;
    ptr=fopen("student details.txt","a");
     for(i=0;i<n;i++)
@@ -62,6 +63,16 @@ void structure(struct std *s,int n,int m)
     {
         fprintf(ptr,"\nmarks of %d subject: %f",j+1,(s+i)->ma.marks[j]);
     }
+    sum=0;
+    for(j=0;j<m;j++)
+    { 
+        sum+=(s+i)->ma.marks[j];
+    }
+    avg=0;
+    avg=sum/m;
+    fprintf(ptr,"Total marks of %s: %f",(s+i)->name,sum);
+    fprintf(ptr,"Percentage of %s: %f",(s+i)->name,avg);
+
     }
 }
 

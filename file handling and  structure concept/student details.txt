@@ -14,3 +14,10 @@ age: 23
 marks of 1 subject: 24.000000
 marks of 2 subject: 25.000000
 marks of 3 subject: 56.000000
+
+id: 3
+name: ravi_kumar
+day-of-birth: 20-8-1991
+age: 33
+marks of 1 subject: 33.000000
+marks of 2 subject: 67.000000
