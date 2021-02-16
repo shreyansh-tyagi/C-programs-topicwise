@@ -1,23 +1,2 @@
 STUDENT DETAILS :-
 
-id: 1
-name: shreyansh_tyagi
-day-of-birth: 2-9-1999
-age: 21
-marks of 1 subject: 50.000000
-marks of 2 subject: 55.000000
-marks of 3 subject: 60.000000
-id: 2
-name: sunny_tyagi
-day-of-birth: 16-9-1998
-age: 23
-marks of 1 subject: 24.000000
-marks of 2 subject: 25.000000
-marks of 3 subject: 56.000000
-
-id: 3
-name: ravi_kumar
-day-of-birth: 20-8-1991
-age: 33
-marks of 1 subject: 33.000000
-marks of 2 subject: 67.000000
