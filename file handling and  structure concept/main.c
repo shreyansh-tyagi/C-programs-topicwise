@@ -20,7 +20,7 @@ int main()
     scanf("%d",&n);
     printf("enter the number of subjects where subjects should not be more than 10: ");
     scanf("%d",&m);
-    if(m<=10){
+    if(m<=10){ 
     structure_function_pointer=&structure;
     s=(struct std*)calloc(n,sizeof(struct std));
     if(s==NULL)
