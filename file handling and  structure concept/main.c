@@ -10,7 +10,7 @@ struct std{
     struct marks{
         float marks[50];
     }ma;
-}*s;
+}*s,e;
 void structure(struct std *,int,int);
 int main()
 {
@@ -35,7 +35,8 @@ int main()
     printf("\nenter age: ");
     scanf("%d",&(s+i)->age);
     printf("\nenter name(use 'underscore(_)' for space): ");
-    scanf("%s",(s+i)->name);
+    fflush(stdin);
+    scanf("%[^\n]",(s+i)->name);
     printf("\nenter the day-of-birth in format(date month year): ");
     scanf("%d%d%d",&(s+i)->d.day,&(s+i)->d.month,&(s+i)->d.year);
     for(j=0;j<m;j++)
