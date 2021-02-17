@@ -34,7 +34,7 @@ int main()
     scanf("%d",&(s+i)->id);
     printf("\nenter age: ");
     scanf("%d",&(s+i)->age);
-    printf("\nenter name(use 'underscore(_)' for space): ");
+    printf("\nenter name: ");
     fflush(stdin);
     scanf("%[^\n]",(s+i)->name);
     printf("\nenter the day-of-birth in format(date month year): ");

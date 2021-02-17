@@ -1,3 +1,29 @@
 STUDENT DETAILS :-
 
 
+
+
+id: 1
+name: shreyansh tyagi
+day-of-birth: 2-9-1999
+age: 21
+marks of 1 subject: 45.000000
+marks of 2 subject: 55.000000
+marks of 3 subject: 65.000000
+marks of 4 subject: 67.000000
+marks of 5 subject: 68.000000
+Total marks of shreyansh tyagi: 300.000000
+Percentage of shreyansh tyagi: 60.000000
+
+
+id: 2
+name: ravi kumar
+day-of-birth: 20-2-1998
+age: 22
+marks of 1 subject: 34.000000
+marks of 2 subject: 56.000000
+marks of 3 subject: 76.000000
+marks of 4 subject: 67.000000
+marks of 5 subject: 45.000000
+Total marks of ravi kumar: 278.000000
+Percentage of ravi kumar: 55.599998
