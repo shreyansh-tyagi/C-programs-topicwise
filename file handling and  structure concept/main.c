@@ -39,6 +39,7 @@ int main()
     scanf("%[^\n]",(s+i)->name);
     printf("\nenter the day-of-birth in format(date month year): ");
     scanf("%d%d%d",&(s+i)->d.day,&(s+i)->d.month,&(s+i)->d.year);
+    if((s+i)->d.day>31)
     for(j=0;j<m;j++)
     {
         printf("\nenter the marks of %d subject: ",j+1);
