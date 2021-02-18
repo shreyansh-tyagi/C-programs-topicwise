@@ -39,7 +39,8 @@ int main()
     scanf("%[^\n]",(s+i)->name);
     printf("\nenter the day-of-birth in format(date month year): ");
     scanf("%d%d%d",&(s+i)->d.day,&(s+i)->d.month,&(s+i)->d.year);
-    if((s+i)->d.day>31)
+    if((s+i)->d.day<=31&&(s+i)->d.month<=12&&(s+i)->d.year<=2021)
+    {
     for(j=0;j<m;j++)
     {
         printf("\nenter the marks of %d subject: ",j+1);
@@ -48,7 +49,7 @@ int main()
     }
     structure_function_pointer(s,n,m);
 }
-}}
+}}}
 void structure(struct std *s,int n,int m)
 {
    int i,j;
