@@ -62,3 +62,29 @@ marks of 1 subject: 0.000000
 marks of 2 subject: 0.000000
 Total marks of dc: 0.000000
 Percentage of dc: 0.000000
+
+
+id: 22
+name: edward starwins
+day-of-birth: 20-8-1993
+age: 34
+marks of 1 subject: 45.000000
+marks of 2 subject: 55.000000
+marks of 3 subject: 66.000000
+marks of 4 subject: 77.000000
+marks of 5 subject: 55.000000
+Total marks of edward starwins: 298.000000
+Percentage of edward starwins: 59.599998
+
+
+id: 2
+name: babli kumar saxena
+day-of-birth: 22-12-1998
+age: 23
+marks of 1 subject: 22.000000
+marks of 2 subject: 45.000000
+marks of 3 subject: 67.000000
+marks of 4 subject: 56.000000
+marks of 5 subject: 44.000000
+Total marks of babli kumar saxena: 234.000000
+Percentage of babli kumar saxena: 46.799999
