@@ -48,8 +48,10 @@ int main()
     }
     structure_function_pointer(s,n,m);
     }
-    else
+    else{
     printf("Please, Enter the valid date");
+    break;
+    }
 }
 }
 }

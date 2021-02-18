@@ -42,3 +42,23 @@ marks of 4 subject: 76.000000
 marks of 5 subject: 56.000000
 Total marks of shivam kumar: 299.000000
 Percentage of shivam kumar: 59.799999
+
+
+id: 1
+name: sd
+day-of-birth: 34-45-4444
+age: 23
+marks of 1 subject: 0.000000
+marks of 2 subject: 0.000000
+Total marks of sd: 0.000000
+Percentage of sd: 0.000000
+
+
+id: 0
+name: dc
+day-of-birth: 0-0-0
+age: 0
+marks of 1 subject: 0.000000
+marks of 2 subject: 0.000000
+Total marks of dc: 0.000000
+Percentage of dc: 0.000000
