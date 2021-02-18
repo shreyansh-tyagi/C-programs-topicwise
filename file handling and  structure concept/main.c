@@ -46,10 +46,16 @@ int main()
         printf("\nenter the marks of %d subject: ",j+1);
         scanf("%f",&(s+i)->ma.marks[j]);
     }
-    }
     structure_function_pointer(s,n,m);
+    }
+    else
+    printf("Please, Enter the valid date");
 }
-}}}
+}
+}
+else
+printf("\nSubjects are more then 10");
+}
 void structure(struct std *s,int n,int m)
 {
    int i,j;
