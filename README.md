@@ -21,5 +21,7 @@
 20.call by value 
 21.call by reference
 22.enum
+23.storage classes
+24.file handling
 
 /* MUCH MORE TO COME */
