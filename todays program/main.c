@@ -9,5 +9,6 @@ void main()
         printf("no");
     }
     */
+   
    printf("%d",c);
 }
