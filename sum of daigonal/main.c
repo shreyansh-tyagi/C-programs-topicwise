@@ -5,7 +5,7 @@ int main()
     int i,j,n,a[10][10],sum=0,sum1=0;
     printf("enter the value of n: ");
     scanf("%d",&n);
-    printf("\nenter the value into array: ");
+    printf("\nenter the value into array:\n");
     for(i=0;i<n;i++)
     {
         for(j=0;j<n;j++)
