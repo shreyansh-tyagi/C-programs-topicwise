@@ -25,4 +25,3 @@
 24. file handling
 
 * MUCH MORE TO COME */
-* MUCH MORE TO COME */
