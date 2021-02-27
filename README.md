@@ -99,4 +99,4 @@ void main()
    
 :relaxed::relaxed::relaxed::relaxed: 
 
-**_For more problems on C language check my_**[Hackerank](https://www.hackerrank.com/shreyansh_tyagi?hr_r=1) 
+_For more problems on C language check my_ [Hackerank](https://www.hackerrank.com/shreyansh_tyagi?hr_r=1) 
