@@ -1,4 +1,4 @@
-# **C-Language**
+# **_C-Language_**
 ## *This repository contain some basic programs to advance on C language that are compiled on visual studio code.*
 
 ## *Topic* :-
@@ -81,7 +81,6 @@
     * Free
 18. File handling :-
     * Declaration of file handling library function
-    * MOdes in file handling
- 
+    * Modes in file handling
    
 :relaxed::relaxed::relaxed::relaxed: 
