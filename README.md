@@ -44,8 +44,8 @@ void main()
    * *Call by value*
    * *Call by reference* 
    * *Recursion*
-10.*Storage classes* :-
-   * *Auto, Static, Extern, Register*
+10. *Storage classes* :-
+    * *Auto, Static, Extern, Register*
 11. *Arrays* :-
     * *Declaration of array*
     * *One dimensional array*
