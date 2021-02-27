@@ -4,7 +4,7 @@
 ## *This repository contain some basic programs to advance on C language that are compiled on visual studio code.*
 
 ### ***Syntax :-***
-```
+```c
 #include<stdio.h>
 #include<stdlib.h>
 #include<string.h>
