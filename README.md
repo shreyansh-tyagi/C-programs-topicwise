@@ -3,6 +3,18 @@
 
 ## *This repository contain some basic programs to advance on C language that are compiled on visual studio code.*
 
+### ***Syntax :-***
+```
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+void main()
+{
+    
+    printf();
+}
+```
+
 ## *Topic* :-
 1. *Variables*
 2. *Operators*
