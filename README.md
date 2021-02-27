@@ -1,27 +1,87 @@
-# C LANGUAGE PROGRAMS TOPICWISE:
-1. variables 
-2. datatypes
-3. if-else
-4. for loop
-5. nested if 
-6. while
-7. nested while
-8. patterns based on loop
-9. switch,break,continue
-10. dynamic memory allocation 
-11. static memory allocation
-12. calloc,malloc,realloc,free
-13. pointers
-14. recursion
-15. function
-16. array
-17. structure
-18. array of structure
-19. union
-20. call by value 
-21. call by reference
-22. enum
-23. storage classes
-24. file handling
+# **C-Language**
+## *This repository contain some basic programs to advance on C language that are compiled on visual studio code.*
 
-* MUCH MORE TO COME */
+## *Topic* :-
+1. Variables
+2. Operators
+3. Datatypes
+4. Input and Output function
+5. Decision control structure :-
+   * if
+   * if-else
+   * nested-if 
+   * if-else-if ladder
+   * break 
+   * Continue
+6. Goto
+7. Switch
+8. Loops :-
+   * for loop
+   * while loop 
+   * do-while loop
+9. Function :-
+   * user-defined function
+   * function prototype,function call,function definition
+   * types of function :-
+      * No argument and no retunr value
+      * No argument and return value
+      * Argument and no return value
+      * Argument passed and return value
+   * Call by value
+   * call by reference 
+   * Recursion
+10.Storage classes :-
+   * Auto, Static, Extern, Register
+11. Arrays :-
+    * declaration of array
+    * one dimensional array
+    * loacl and global declaration in array
+    * Array manipulation
+    * Array of structure
+    * Array with function
+    * Array of pointer
+    * two dimensional array
+    * multi-dimensional array
+    * initialization od 2d array and multidimensional array
+    * pointer and two-dimensional array
+    * pointer and muli-dimensional array
+12. Pointers :-
+    * pointer airthmetics(Increment and Decrement a pointer)
+    * Array of pointer
+    * pointer to pointer
+    * pointer to function
+    * function pointer
+    * pointer to structure
+13. Strings :-
+    * Array of string
+    * passing string to function
+    * string and pointers using function
+    * string functions
+14. Strcuture :-
+    * declare a structure
+    * intialize a structure variable
+    * Access structure element
+    * Array in structure
+    * structure in function
+    * structure to array with pointer using function 
+    * typedef in structure
+    * Nested structure
+    * Nested structure using function and array
+    * passing struct to function
+    * return struct from function
+    * passing struct by reference 
+15. Union :-
+    * Access member of union
+    * difference between and structure (size)
+16. Enums
+17. Dynamic memory allocation
+    * Malloc
+    * Calloc
+    * Realloc 
+    * Free
+18. File handling :-
+    * Declaration of file handling library function
+    * MOdes in file handling
+ 
+   
+:relaxed::relaxed::relaxed::relaxed: 
