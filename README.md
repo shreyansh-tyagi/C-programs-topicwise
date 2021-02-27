@@ -2,7 +2,7 @@
 ![C logo](https://user-images.githubusercontent.com/71514413/109389939-bf51c700-7934-11eb-96c1-61130830d9bf.jpg)
 
 ## *This repository contain some basic programs to advance on C language that are compiled on visual studio code.*
-https://www.hackerrank.com/shreyansh_tyagi?hr_r=1 
+[Hackerank](https://www.hackerrank.com/shreyansh_tyagi?hr_r=1) 
 
 ### ***Syntax :-***
 ```c
