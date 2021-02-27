@@ -4,22 +4,22 @@
 
 ## *Topic* :-
 1. *Variables*
-2. Operators
-3. Datatypes
-4. Input and Output function
-5. Decision control structure :-
-   * if
-   * if-else
-   * nested-if 
-   * if-else-if ladder
-   * break 
-   * Continue
-6. Goto
-7. Switch
-8. Loops :-
-   * for loop
-   * while loop 
-   * do-while loop
+2. *Operators*
+3. *Datatypes*
+4. *Input and Output function*
+5. *Decision control structure* :-
+   * *If*
+   * *If-else*
+   * *Nested-if* 
+   * *If-else-if ladder*
+   * *Break* 
+   * *Continue*
+6. *Goto*
+7. *Switch*
+8. *Loops* :-
+   * *For loop*
+   * *While loop* 
+   * *Do-while loop*
 9. Function :-
    * user-defined function
    * function prototype,function call,function definition
