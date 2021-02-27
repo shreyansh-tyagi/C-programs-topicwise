@@ -1,5 +1,6 @@
 # **_C-Language_**
-![c logo](https://user-images.githubusercontent.com/71514413/109388496-79453500-792d-11eb-9f11-4aa184f2dcf3.jpg)
+![C logo](https://user-images.githubusercontent.com/71514413/109389939-bf51c700-7934-11eb-96c1-61130830d9bf.jpg)
+
 ## *This repository contain some basic programs to advance on C language that are compiled on visual studio code.*
 
 ## *Topic* :-
@@ -20,68 +21,68 @@
    * *For loop*
    * *While loop* 
    * *Do-while loop*
-9. Function :-
-   * user-defined function
-   * function prototype,function call,function definition
-   * types of function :-
-      * No argument and no retunr value
-      * No argument and return value
-      * Argument and no return value
-      * Argument passed and return value
-   * Call by value
-   * call by reference 
-   * Recursion
-10.Storage classes :-
-   * Auto, Static, Extern, Register
-11. Arrays :-
-    * declaration of array
-    * one dimensional array
-    * loacl and global declaration in array
-    * Array manipulation
-    * Array of structure
-    * Array with function
-    * Array of pointer
-    * two dimensional array
-    * multi-dimensional array
-    * initialization od 2d array and multidimensional array
-    * pointer and two-dimensional array
-    * pointer and muli-dimensional array
-12. Pointers :-
-    * pointer airthmetics(Increment and Decrement a pointer)
-    * Array of pointer
-    * pointer to pointer
-    * pointer to function
-    * function pointer
-    * pointer to structure
-13. Strings :-
-    * Array of string
-    * passing string to function
-    * string and pointers using function
-    * string functions
-14. Strcuture :-
-    * declare a structure
-    * intialize a structure variable
-    * Access structure element
-    * Array in structure
-    * structure in function
-    * structure to array with pointer using function 
-    * typedef in structure
-    * Nested structure
-    * Nested structure using function and array
-    * passing struct to function
-    * return struct from function
-    * passing struct by reference 
-15. Union :-
-    * Access member of union
-    * difference between and structure (size)
-16. Enums
-17. Dynamic memory allocation
-    * Malloc
-    * Calloc
-    * Realloc 
-    * Free
-18. File handling :-
-    * Declaration of file handling library function
-    * Modes in file handling
+9. *Function* :-
+   * *User-defined function*
+   * *Function prototype,function call,function definition*
+   * *Types of function* :-
+      * *No argument and no retunr value*
+      * *No argument and return value*
+      * *Argument and no return value*
+      * *Argument passed and return value*
+   * *Call by value*
+   * *Call by reference* 
+   * *Recursion*
+10.*Storage classes* :-
+   * *Auto, Static, Extern, Register*
+11. *Arrays* :-
+    * *Declaration of array*
+    * *One dimensional array*
+    * *Local and global declaration in array*
+    * *Array manipulation*
+    * *Array of structure*
+    * *Array with function*
+    * *Array of pointer*
+    * *Two dimensional array*
+    * *Multi-dimensional array*
+    * *Initialization od 2d array and multidimensional array*
+    * *Pointer and two-dimensional array*
+    * *Pointer and muli-dimensional array*
+12. *Pointers* :-
+    * *Pointer airthmetics(Increment and Decrement a pointer)*
+    * *Array of pointer*
+    * *Pointer to pointer*
+    * *Pointer to function*
+    * *Function pointer*
+    * *Pointer to structure*
+13. *Strings* :-
+    * *Array of string*
+    * *Passing string to function*
+    * *String and pointers using function*
+    * *String functions*
+14. *Strcuture* :-
+    * *Declare a structure*
+    * *Intialize a structure variable*
+    * *Access structure element*
+    * *Array in structure*
+    * *Structure in function*
+    * *Structure to array with pointer using function* 
+    * *Typedef in structure*
+    * *Nested structure*
+    * *Nested structure using function and array*
+    * *Passing struct to function*
+    * *Return struct from function*
+    * *Passing struct by reference* 
+15. *Union* :-
+    * *Access member of union*
+    * *Difference between and structure (size)*
+16. *Enums*
+17. *Dynamic memory allocation*
+    * *Malloc*
+    * *Calloc*
+    * *Realloc* 
+    * *Free*
+18. *File handling* :-
+    * *Declaration of file handling library function*
+    * *Modes in file handling*
    
 :relaxed::relaxed::relaxed::relaxed: 
