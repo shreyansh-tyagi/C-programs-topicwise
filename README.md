@@ -35,9 +35,9 @@ void main()
    * *Do-while loop*
 9. *Function* :-
    * *User-defined function*
-   * *Function prototype,function call,function definition*
+   * *Function prototype, function call, function definition*
    * *Types of function* :-
-      * *No argument and no retunr value*
+      * *No argument and no return value*
       * *No argument and return value*
       * *Argument and no return value*
       * *Argument passed and return value*
@@ -58,7 +58,7 @@ void main()
     * *Multi-dimensional array*
     * *Initialization od 2d array and multidimensional array*
     * *Pointer and two-dimensional array*
-    * *Pointer and muli-dimensional array*
+    * *Pointer and multi-dimensional array*
 12. *Pointers* :-
     * *Pointer airthmetics(Increment and Decrement a pointer)*
     * *Array of pointer*
