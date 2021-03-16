@@ -3,29 +3,22 @@
 #include<string.h>
 void main()
 {
-    int i,n,a,b,c[50],len=0,d;
+    int n,a,b,c=0;
     printf("enter the number to get the palindrome of number: \n");
     scanf("%d",&n);
     a=n;
-    while(a!=0)
+    while(n!=0)
     {
-        a=a/10;
-        len++;
+        b=n%10;
+        c=(c*10)+b;
+        n=n/10;
     }
-    while(a!=10)
+    if(c==a)
     {
-        b=b%10;
-        a=a/10;
+        printf("it is palindrome number where %d is equal to %d",c,a);
     }
-    while(a!=0)
-    {
-        b=a%10;
-        a=a/10;
-        for(i=0;i<len;i++)
-        {
-            c[i]=b;
-        }
-
-
+    else{
+        
+        printf("it is not palindrome number where %d is not equal to %d",c,a);
     }
 }
