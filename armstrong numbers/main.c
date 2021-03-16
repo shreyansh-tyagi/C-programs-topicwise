@@ -1,20 +1,21 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<string.h>
+#include<math.h>
 void main()
 {
-    int n,a,b,len=0,sum=0;
+    int n,a,b,e,len=0,sum=0;
     printf("enter the number for armstrong number: \n");
     scanf("%d",&n);
-    a=n;
-    while(n!=0)
+    e=a=n;
+    while(e!=0)
     {
-        n=n/10;
+        e=e/10;
         len++;
     }
     while(n!=0)
     {
-        b=b%10;
+        b=n%10;
         sum=sum+pow(b,len);
         n=n/10;
 
@@ -25,7 +26,7 @@ void main()
     }
     else{
         
-        printf("it is aramstrong number where %d is equal to %d",sum,a);
+        printf("it is not aramstrong number where %d is not equal to %d",sum,a);
     }
 
 }
