@@ -3,13 +3,15 @@
 #include<string.h>
 void main()
 {
-    int i,n,a;
+    int i,a,b;
     printf("enter the number to be reversed: \n");
-    scanf("%d",&n);
-    a=n;
+    scanf("%d",&a);
     while(a!=0)
     {
-        
+        b=a%10;
+        a=a/10;
+        printf("%d",b);
     }
+    
 
 }
