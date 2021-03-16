@@ -15,7 +15,17 @@ void main()
     while(n!=0)
     {
         b=b%10;
+        sum=sum+pow(b,len);
+        n=n/10;
+
+    }
+    if(sum==a)
+    {
+        printf("it is aramstrong number where %d is equal to %d",sum,a);
+    }
+    else{
         
+        printf("it is aramstrong number where %d is equal to %d",sum,a);
     }
 
 }
