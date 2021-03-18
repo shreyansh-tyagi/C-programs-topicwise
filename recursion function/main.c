@@ -13,7 +13,7 @@ int recursion(int n)
 {
     int res;
     if(n==0)
-        res=1;
+        return 1;
     else
         res=n*recursion(n-1);
     return res;
