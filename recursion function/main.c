@@ -12,9 +12,14 @@ void main()
 int recursion(int n)
 {
     int res;
-    if(n==0)
-        return 1;
-    else
-        res=n*recursion(n-1);
+    if(n>0)
+    {
+    res=n*recursion(n-1);
     return res;
+    }
+    else
+    {
+        return 1;
+    }
+       
 }
