@@ -30,9 +30,9 @@ int main()
         printf("\n");
     }
       
-    for (i = 0; i < 2; i++)
+    for (i = 0; i<2; i++)
     {
-        for (j = 0; j < 2; j++)
+        for (j = 0; j<2; j++)
         {
             printf(" %d", b[i][j]);
         }
