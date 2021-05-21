@@ -1,0 +1,1 @@
+hello i am shreyansh tyagi trying to create a program that can read a file character by character.
