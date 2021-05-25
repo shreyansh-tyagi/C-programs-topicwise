@@ -1,0 +1,9 @@
+this is the text that we can put into test file
+
+fputc function: t
+
+fputs function: this is the text that we can put into test filethis is the text that we can put into test file
+
+fputc function: t
+
+fputs function: this is the text that we can put into test file
