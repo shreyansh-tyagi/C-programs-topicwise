@@ -4,6 +4,6 @@
 void main()
 {
     FILE *ptr=NULL;
-    
-    printf();
+    char s[50];
+    ptr=fopen("test.txt","w");
 }
