@@ -3,7 +3,7 @@
 #include<string.h>
 void main()
 {
-    FILE *ptr=NULL;
+    FILE *ptr=NULL,*ptr1=NULL;
     char s[80]="this is the text that we can put into test file";
     char s1,s2[80];
     ptr=fopen("test.txt","w"); //opening in append mode
@@ -14,8 +14,9 @@ void main()
     fputc(s[0],ptr);
     fprintf(ptr,"\n\nfputs function: ");
     fputs(s,ptr); // this function will take whole string and print that into the test file 
-    s1=fgetc(ptr);
+    ptr1=fopen("D://c programs//file handling function//test.txt","r");
+    s1=fgetc(ptr1);
     printf("%c\n",s1);
-    fgets(s2,30,ptr);
+    fgets(s2,30,ptr1);
     printf("%s",s2);
 }
