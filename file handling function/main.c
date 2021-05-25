@@ -11,5 +11,6 @@ void main()
     // from zero to the length of string using strlen function
     fprintf(ptr,"\n\nfputc function: ");
     fputc(s[0],ptr);
-
+    fprintf(ptr,"\n\nfputs function: ");
+    fputs(s,ptr);
 }
