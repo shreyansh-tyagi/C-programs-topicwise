@@ -13,7 +13,7 @@ void main()
         c=a+b;
         a=b;
         b=c;
-        printf("the fibonacci series of the number is: %d",b);
+        printf("the fibonacci series of the number is: %d",b); 
     }
     getch();
 }
