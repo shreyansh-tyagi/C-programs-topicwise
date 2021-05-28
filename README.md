@@ -99,9 +99,9 @@ void main()
     * *Function in file handling*
 19. *Graphics in C* :-
     *  *Header file in which graphics comes under*
-       *Implementation of graphics programs*
-       *Structure of how graphic program is written*
-       *Functions of graphics header file used to create graphics on console*   
+    *  *Implementation of graphics programs*
+    *  *Structure of how graphic program is written*
+    *  *Functions of graphics header file used to create graphics on console*   
    
 :relaxed::relaxed::relaxed::relaxed: 
 
