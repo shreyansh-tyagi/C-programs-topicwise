@@ -56,7 +56,7 @@ void main()
     * *Array of pointer*
     * *Two dimensional array*
     * *Multi-dimensional array*
-    * *Initialization od 2d array and multidimensional array*
+    * *Initialization of 2d array and multidimensional array*
     * *Pointer and two-dimensional array*
     * *Pointer and multi-dimensional array*
 12. *Pointers* :-
