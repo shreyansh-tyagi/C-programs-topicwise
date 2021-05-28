@@ -96,6 +96,9 @@ void main()
 18. *File handling* :-
     * *Declaration of file handling library function*
     * *Modes in file handling*
+    * *Function in file handling*
+19. *Graphics in C* :-
+    *    
    
 :relaxed::relaxed::relaxed::relaxed: 
 
