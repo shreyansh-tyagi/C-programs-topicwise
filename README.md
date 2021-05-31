@@ -56,11 +56,11 @@ void main()
     * *Array of pointer*
     * *Two dimensional array*
     * *Multi-dimensional array*
-    * *Initialization od 2d array and multidimensional array*
+    * *Initialization of 2d array and multidimensional array*
     * *Pointer and two-dimensional array*
     * *Pointer and multi-dimensional array*
 12. *Pointers* :-
-    * *Pointer airthmetics(Increment and Decrement a pointer)*
+    * *Pointer airthmetics (Increment and Decrement a pointer)*
     * *Array of pointer*
     * *Pointer to pointer*
     * *Pointer to function*
@@ -86,7 +86,7 @@ void main()
     * *Passing struct by reference* 
 15. *Union* :-
     * *Access member of union*
-    * *Difference between and structure (size)*
+    * *Difference between union and structure (size)*
 16. *Enums*
 17. *Dynamic memory allocation*
     * *Malloc*
