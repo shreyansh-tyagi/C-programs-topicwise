@@ -1,4 +1,9 @@
 #include "stdio.h"
+#include "stdio.h"
+ /* char add()
+    {
+        char s[]="will i get printed";
+        return s;    }
 int main()
 {
     /*static int var=5;
@@ -15,5 +20,16 @@ int main()
     {
     printf("heloo");
     }*/
+ // printf("%s",add());
+
+//}*/
+int main()
+{
+    static int i=5;
+     printf("%d",i--);
+    if(i){
+        main();
+       
+    }
 }
 
