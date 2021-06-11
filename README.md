@@ -1,5 +1,4 @@
-# **_C-Programming_**
-![C logo](https://user-images.githubusercontent.com/71514413/109389939-bf51c700-7934-11eb-96c1-61130830d9bf.jpg)
+# **_C-Programming_** <a href="https://www.cprogramming.com/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="c" width="25" height="25"/>&nbsp;&nbsp;&nbsp;&nbsp; </a>
 
 ## *This repository contain some basic programs to advance on C language that are compiled on visual studio code.*
 
