@@ -1,4 +1,4 @@
-# **_  <a href="https://www.cprogramming.com/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="c" width="40" height="40"/>&nbsp;&nbsp;&nbsp;&nbsp; </a> Programming_** 
+# **_ C Programming_** 
 
 ## *This repository contain some basic programs to advance on C language that are compiled on visual studio code.*
 
@@ -14,6 +14,8 @@ void main()
 }
 ```
 
+ <a href="https://www.cprogramming.com/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="c" width="60" height="60"/>&nbsp;&nbsp;&nbsp;&nbsp; </a> 
+ 
 ## *Topic* :-
 1. *Variables*
 2. *Operators*
