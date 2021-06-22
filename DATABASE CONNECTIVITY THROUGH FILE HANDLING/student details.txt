@@ -99,3 +99,14 @@ marks of 2 subject: 33.000000
 marks of 3 subject: 44.000000
 Total marks of shreyansh : 98.000000
 Percentage of shreyansh : 32.666668
+
+
+id: 11
+name: shreyansh tyagi
+day-of-birth: 2-9-1999
+age: 22
+marks of 1 subject: 60.000000
+marks of 2 subject: 90.000000
+marks of 3 subject: 86.000000
+Total marks of shreyansh tyagi: 236.000000
+Percentage of shreyansh tyagi: 78.666664
